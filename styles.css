@@ -1501,9 +1501,9 @@ header label:hover {
         width: 90px;
     }
 
-    .testimonial-person-details {
+    /* .testimonial-person-details {
         justify-content: space-evenly;
-    }
+    } */
 
     .person-name h3 {
         font-size: 15px;
