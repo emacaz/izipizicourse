@@ -1532,6 +1532,10 @@ header label:hover {
         width: 100%;
     }
 
+    .mc-field-group input::placeholder {
+        text-align: center;
+    }
+
     .clear input {
         width: 100%;
     }
