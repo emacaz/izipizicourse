@@ -1533,7 +1533,7 @@ header label:hover {
     }
 
     .mc-field-group input::placeholder {
-        text-align: center;
+        font-size: 14px;
     }
 
     .clear input {
