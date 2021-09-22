@@ -1,0 +1,232 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #9a58b6;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 52px;
+    background: #3498db;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 130px auto 100px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
+    font-size: 14px;
+    position: relative;
+}
+
+.Logo {
+    margin: 0 5px;
+}
+
+.Logo a{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Logo figure {
+    margin: 0;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    justify-self: end;
+    padding-right: 10px;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.menu ul {
+    margin: 0 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .4s;
+}
+
+.menu li {
+    border-radius: 8px;
+}
+
+.menu li a {
+    display: block;
+    padding: 8px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.LoginButton a {
+    text-decoration: none;
+    color: #000;
+    background-color: #00d86a;
+    border-radius: 8px;
+    padding: 5px 5px;
+}
+
+.LoginButton a:hover {
+    background-color: #fcfb1e;
+    transition: .4s;
+}
+
+/* hero */
+.u-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;    
+}
+.hero-titles h1 {
+    margin: 0;
+    font-size: 3.25rem;
+}
+.hero-titles p {
+    margin: 0 0 15px 0;
+    font-size: 1.25rem;
+}
+.hero-differences p {
+    margin: 0;
+    font-size: .6875rem;
+}
+.hero-differences a {
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px;
+}
+.hero-differences a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-links{
+    padding: 0;
+    margin: 30px 0 0 0;
+    
+}
+.hero-links a {
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 15%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hero-links a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .4s;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+
+
+
+/*----Screen for 1150px or less------*/
+@media (max-width:1150px) {
+    .hero-links {
+        margin: 0;
+    }
+}
+
+/*----Screen for 768px or less------*/
+@media (max-width:768px){
+    
+    header {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header label {
+        display: block;
+        color: #000;
+    }
+
+    .menu {
+        position: absolute;
+        margin: 52px -100%;
+        background-color: #2879af;
+        width: 100%;
+        z-index: 1;
+        top: 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu li {
+        border-top: 1px solid #000;
+        border-radius: 0;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 52px 0;
+    }
+
+
+    /* hero */
+    .hero-wrapper {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .hero-description {
+        width: auto;
+    }
+
+    .hero-titles h1 {
+        font-size: 3rem;
+    }
+    .hero-titles p {
+        font-size: 1rem;
+    }
+
+    .hero-img {
+        width: auto;
+    }
+    .hero-img figure {
+        padding: 0 40px;
+    }
+}
