@@ -220,7 +220,7 @@ header label:hover {
 }
 
 .know-more-title-div p {
-    margin: 10px 0 30px 0;
+    margin: 10px 0 60px 0;
     font-size: 24px;
     text-align: center;
 }
@@ -239,13 +239,14 @@ header label:hover {
 
 
 .content-section-items {
-    width: 340px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     border: 1px solid #000;
     border-radius: 8px;
+    padding-bottom: 18px;
 }
 .content-section-items ul {
     padding-left: 10px;
@@ -261,14 +262,14 @@ header label:hover {
 
 }
 .instructor-info-div figure {
-    margin: 10px 10px 10px 20px;
+    margin: 10px 6px 10px 20px;
 }
 .instructor-info-div img {
     height: 80px;
 }
 
 .instructor-name p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .instructor-country figure {
@@ -278,6 +279,7 @@ header label:hover {
 }
 .instructor-country p {
     margin: 0;
+    font-size: 10px;
 }
 .instructor-country img {
     margin-left: 7px;
@@ -295,10 +297,11 @@ header label:hover {
 .module-zero {
     background-color: #3498db;
     background-image: url("./images/m0.png");
+    background-position: center center;
     color: #fff;
     border-radius: 12px;
-    width: 276px;
-    height: 104px;
+    width: 255px;
+    height: 106px;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
     display: flex;
     flex-direction: column;
@@ -306,7 +309,7 @@ header label:hover {
     margin: 0 0 8px 0;
 }
 .module-zero p {
-    padding: 0px 0 0 60px;
+    padding: 0px 0 0 40px;
     margin: 6px 0;
     font-size: 18px;
 }
@@ -314,17 +317,18 @@ header label:hover {
 .module-one {
     background-color: #fcfb1e;
     background-image: url("./images/m1.png");
+    background-position: center center;
     color: #000;
     border-radius: 12px;
-    width: 276px;
-    height: 104px;
+    width: 255px;
+    height: 106px;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .module-one p {
-    padding: 0px 0 0 60px;
+    padding: 0px 0 0 40px;
     margin: 6px 0;
     font-size: 20px;
 }
@@ -350,7 +354,8 @@ header label:hover {
 
 .schedules-section-items-div {
     height: 481px;
-    width: 300px;
+    width: 310px;
+    padding: 11px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,8 +411,8 @@ header label:hover {
 }
 
 .plus-section-items-div {
-    height: 441px;
-    width: 285px;
+    height: 463px;
+    width: 290px;
     padding: 15px 20px 25px 0;
     position: relative;
     border: 1px solid #000;
@@ -427,12 +432,10 @@ header label:hover {
 .plus-section-items-div ul {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    gap: 22px;
+    gap: 16px;
     font-size: 14px;
 }
-.plus-section-items-div img {
-    width: 100%;
-}
+
 .plus-section-items-div ul a {
     color: #fff;
 }
@@ -446,11 +449,13 @@ header label:hover {
 }
 #telegram-group-li img {
     height: 21px;
+    width: auto;
 }
 
 .apps-div {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .apps-div figure {
     margin: 0 5px;
@@ -469,7 +474,7 @@ header label:hover {
 .buy-button a {
     background-color: #68da6c;
     border-radius: 8px;
-    padding: 10px 90px;
+    padding: 10px 88px;
     text-decoration: none;
     color: #000;
     font-size: 16px;
@@ -477,6 +482,14 @@ header label:hover {
 .buy-button a:hover {
     background-color: #fcfb1e;
     transition: .3s;
+}
+
+
+.doubts p, a {
+    margin: 20px 0;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
 }
 
 
@@ -652,6 +665,7 @@ header label:hover {
     align-items: center;
     color: #fff;
     text-decoration: none;
+    margin: 0;
 }
 
 .Footer-language p {
@@ -745,6 +759,22 @@ header label:hover {
 
 
 
+/*----Screen for 1050px or less------*/
+@media (max-width:1050px){
+
+    /* CONOCE-MAS-WRAPPER */
+    .know-more-content-div {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .plus-section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+
 
 /*----Screen for 910px or less------*/
 @media (max-width:910px){
@@ -836,6 +866,11 @@ header label:hover {
     /* LINE */
     .line {
         width: 80vw;
+    }
+
+    /* CONOCE-MAS */
+    .know-more-content-div {
+        display: block;
     }
 
 
@@ -953,5 +988,32 @@ header label:hover {
 
     .clear input {
         width: 100%;
+    }
+
+
+    /* CONOCE-MAS-WRAPPER */
+
+    .content-section {
+        margin-bottom: 40px;
+    }
+    .content-section-items {
+        width: 290px;
+    }
+
+
+    .schedules-section {
+        margin-bottom: 40px;
+    }
+    .schedules-section-items-div {
+        width: 290px;
+    }
+
+    .plus-section-items-div {
+        width: 270px;
+    }
+
+
+    .fixed-zoom-logo img {
+        width: 40px;
     }
 }
