@@ -213,6 +213,9 @@ header label:hover {
     margin: 30px auto;
 }
 
+
+
+/* MODULES CONTENT */
 .ModulesContent {
     margin-bottom: 0;
     justify-content: center;
@@ -254,6 +257,7 @@ header label:hover {
     padding-left: 60px;
     padding-top: 30px;
     margin: 35px;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
 }
 
 .ModulesList li:hover {
