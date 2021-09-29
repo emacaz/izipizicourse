@@ -670,6 +670,22 @@ header label:hover {
 }
 
 
+.see-plans {
+    margin: 50px 0 30px 0;
+    text-align: center;
+}
+.see-plans a{
+    color: #000;
+    padding: 10px 60px;
+    background-color: #00d86a;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.see-plans a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
 /* FOOTER SECTION */
 .Footer {
     background-color: #174665;
