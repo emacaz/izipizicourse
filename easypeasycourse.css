@@ -71,6 +71,11 @@ header label:hover {
     text-decoration: none;
 }
 
+/* #acelerador {
+    border-radius: 8px;
+    background-color: #9a58b6;
+} */
+
 .LoginButton a {
     text-decoration: none;
     color: #000;
@@ -190,6 +195,19 @@ header label:hover {
     display: none;
 }
 
+/* --------SHORT EXPLANATION-------- */
+
+.ShortExplanation {
+    margin: 0;
+}
+
+.ShortExplanation p {
+    padding-top: 0;
+    color: #3498db;
+    text-align: center;
+}
+
+
 /* --------LINE --------*/
 
 .Line {
@@ -199,305 +217,215 @@ header label:hover {
 }
 
 
-/* COURSES CONTENT */
 
-.courses-modules {
-    margin-bottom: 1rem;
-}
-.level-div {
-    margin-bottom: 4rem;
-}
-.courses-div {
-    display: grid;
-    grid-gap: 1.2rem;
-    grid-template-columns: repeat(auto-fill,276px);
-    grid-template-rows: repeat(auto-fill,86px);
-    -webkit-box-pack: center;
-}
-.courses-div a {
-    display: flex;
-    align-items: center;
-    background-color: #3498DB;
-    padding: .75rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    color: #000;
-}
-.courses-div a:hover {
-    background-color: #2879af;
-}
-.courses-div a img {
-    height: 50px;
-    margin-right: 8px;
-    border-radius: .3rem;
+/* MODULES CONTENT */
+.ModulesContent {
+    margin-bottom: 0;
+    justify-content: center;
 }
 
-#accelerator, #ipa {
-    background-color: #282829;
-}
-
-
-
-
-
-/* BENEFITS SECTION */
-.Benefits {
-    background-color: #2879af;
-    background-image: url("./images/benefits-section.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 81vh;
-    min-height: 742px;
-    height: auto;
-}
-
-.Benefits-wrapper h2 {
-    margin: 0;
-    color: #fff;
-    font-size: 32px;
-    padding-top: 60px;
-}
-
-.Benefits-content {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 30px 0 30px 0;
-}
-
-.Benefits-lists {
-    width: 50%;
-}
-
-.group-list {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 30px;
-}
-
-.group-list ul {
-    color: #fff;
-    font-size: 18px;
-    padding-left: 19px;
-    grid-gap: 30px;
-    display: grid;
-    list-style: none;
-}
-
-.group-list li {
-    position: relative;
-    line-height: 1.4;
-}
-
-.group-list li::before {
-    color: #fcfb1e;
-    content: "\2022";
-    font-size: 2.5rem;
-    font-weight: 700;
-    position: absolute;
-    left: -25px;
-    top: -12px;
-}
-
-.apps h4 {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.apps-list {
-    display: flex;
-}
-
-.apps-list figure {
-    margin: auto 15px auto 0;
-}
-
-.CTA-form-div {
-    padding-top: 50px;
-}
-
-.dark-form input {
-    background-color: #174665;
-    width: 276px;
-}
-
-.dark-form input::placeholder {
-    color: rgb(255 255 255 / 57%);
-}
-
-.dark-form button {
-    width: auto;
-}
-
-.laptop-phone-img {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 50%;
-}
-
-.laptop-img {
-    margin: 0;
-    padding: 0;
-}
-
-.laptop-img img {
+.Modules-title {
+    margin: auto;
     width: 100%;
 }
 
-.phone-img {
-    position: absolute;
-    top: 44%;
+.Modules-title h2 {
+    color: #01257d;
+    font-size: 30px;
     margin: 0;
-    padding: 0;
-    filter: drop-shadow(2px 2px 28px black);
 }
 
-.phone-img img {
-    width: 40%;
+.Modules-title p {
+    color: #01257d;
+    margin: 0;
+    font-size: 24px;
 }
 
-
-
-/* TESTIMONIALS SECTION */
-.Testimonials {
-    background-color: #3498db;
-}
-
-.Testimonials-wrapper {
-    padding: 60px 0 70px 0;
-}
-
-.Testimonials-title {
-    margin: 0 0 80px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.Testimonials-content-description {
+.ModulesList-Features {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
 }
 
-.Testimonials-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
+.ModulesList {
+    text-decoration: none;
+    list-style-type: none; 
+    padding: 0;
 }
 
-
-.indicator-btn {
-    display: inline-block;
-    height: 17px;
-    width: 17px;
-    margin: 4px;
-    cursor: pointer;
-    opacity: 0.3;
-    transition: 0.2s;
-}
-
-.indicator-btn:hover {
-    filter: drop-shadow(2px 2px 3px black);
-}
-
-.active {
-    width: 20px;
-    height: 20px;
-    opacity: unset;
-}
-
-.indicator-btn img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.Testimonials-gallery {
-    width: 100%;
-    overflow: hidden;
-}
-
-.slide-row {
-    display: flex;
-    width: 1000%;
-    transition: 1s;
-}
-
-.slide-col {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    background-color: #174665;
+.ModulesList li {
+    /* cursor: pointer; */
+    width: 216px;
+    height: 74px;
     border-radius: 12px;
+    padding-left: 60px;
+    padding-top: 30px;
+    margin: 35px;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
-    margin: 20px;
-    padding: 25px;
 }
 
-.testimonial-person-details {
+.ModulesList li:hover {
+    background-color: rgb(0 0 0 / 25%);
+    transition: .4s;
+}
+
+.row1, .row2, .row3 {
     display: flex;
-    align-items: center;
 }
 
-.testimonial-person-photo-div {
-    margin: 0 20px 0 0;
+.m0 {
+    background-color: #3498db;
+    background-image: url("./images/m0.png");
+    color: #fff;
+}
+.m1 {
+    background-color: #fcfb1e;
+    background-image: url("./images/m1.png");
+}
+.m2 {
+    background-color: #fcfb1e;
+    background-image: url("./images/m2.png");
+}
+.m3 {
+    background-color: #fcfb1e;
+    background-image: url("./images/m3.png");
+}
+.m4 {
+    background-color: #2879af;
+    background-image: url("./images/m4.png");
+}
+.m5 {
+    background-color: #174665;
+    background-image: url("./images/m5.png");
+    color: #fff;
 }
 
-.testimonial-person-photo {
-    margin: 0;
+.ModulesFeatures {
+    width: 50%;
+    list-style: none;
+    margin-right: 110px;
+    display: grid;
+    margin: auto;
+    grid-gap: 28px;
 }
 
-.testimonial-person-photo img {
-    border-radius: 50%;
-    width: 100px;
-    height: auto;
-}
-
-.person-name h3 {
+.ModulesFeatures li {
     font-size: 24px;
-    color: #fff;
-    margin: 0;
+    color: #01257d;
+    line-height: 1;
+    position: relative;
 }
 
-.testimonial-person-country {
+.ModulesFeatures li::before {
+    color: #174665;
+    content: "\2022";
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    left: -25px;
+    top: -9px;
+}
+
+.SR-IPA {
+    position: relative;
+    background: rgb(52,152,219);
+    background: linear-gradient(0deg, rgba(52,152,219,1) 0%, rgba(52,152,219,0.9192051820728291) 95%, rgba(255,255,255,0.04245448179271705) 100%);
+}
+
+.sr-ipa-title {
+    margin: auto;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.SR-IPA h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.Line2 {
+    width: 260px;
+    border-top: 3px solid #000;
+}
+
+.IPA {
     display: flex;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
 
-.testimonial-person-country img {
-    height: 30px;
-    padding: 0 6px 0 0;
-    margin: 0;
+.IPA-image {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-.testimonial-person-country p {
+.IPA h3 {
+    width: 50%;
     color: #fff;
-    font-size: 18px;
-    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0px 80px;
 }
 
-.testimonial-person-comment p {
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.3;
-    letter-spacing: .8px;
+.IPA-image img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.Testimonials-description {
+.SR {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.SR-description-div {
     width: 50%;
 }
 
-.Testimonials-description-list li {
-    color: #fff;
-    font-size: 24px;
-    line-height: 30px;
-    padding-bottom: 40px;
+.SR-description {
+    font-weight: 350;
+    padding: 0px 60px;
 }
 
+.SR-image {
+    width: 50%;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.SR-image img {
+    width: 100%;
+}
+
+
+
+.see-plans {
+    position: relative;
+    text-align: center;
+    height: 50px;
+    margin-top: 50px;
+}
+.see-plans a{
+    color: #000;
+    padding: 8px 70px;
+    background-color: #00d86a;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.see-plans a:hover {
+    background-color: #d2e70f;
+    transition: .2s;
+}
 
 
 /* FOOTER SECTION */
@@ -724,9 +652,49 @@ header label:hover {
 
 /*----Screen for 1150px or less------*/
 @media (max-width:1150px){
+    
 
 
-    /* BENEFITS SECTION */
+    .levelAcquire, .Modules-title-p {
+        text-align: center;
+    }
+
+    .ModulesList-Features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ModulesList {
+        display: flex;
+    }
+
+    .row1, .row2, .row3 {
+        display: block;
+    }
+
+    .ModulesFeatures {
+        display: grid;
+        grid-gap: 20px;
+        width: 85%;
+    }
+
+    .ModulesList li {
+        margin: 25px 12px;
+    }
+
+    .IPA h3 {
+        padding: 0px 20px;
+    }
+
+    .sr-ipa-title {
+        text-align: center;
+    }
+
+    .SR-description {
+        padding: 0px 20px;
+    }
+
     .group-list {
         display: block;
     }
@@ -769,7 +737,39 @@ header label:hover {
 
 /*----Screen for 950px or less------*/
 @media (max-width:950px){
-    
+    .ModulesList-Features {
+        display: flex;
+        flex-direction: row;
+        margin: auto 10px;
+        margin-top: 41px;
+    }
+
+    .ModulesList {
+        display: grid;
+        justify-items: center;
+        width: 50%;
+    }
+
+    .ModulesList li {
+        margin: 0 0px 20px 0px;
+    }
+
+    .ModulesFeatures {
+        width: 50%;
+        grid-gap: 84px;
+    }
+
+    .IPA h3 {
+        padding: 0px 5px;
+    }
+
+    /* .IPA-image img {
+        width: 350px;
+    } */
+
+    .SR-description {
+        padding: 0px 5px;
+    }
 
     .dark-form {
         display: flex;
@@ -800,7 +800,26 @@ header label:hover {
         display: block;
     }
 
-    
+    .Modules-title h2 {
+        font-size: 24px;
+    }
+
+    .SR {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .SR-image {
+        width: 65%;
+        
+    }
+
+    .SR-description-div {
+        width: auto;
+        margin: 0;
+        padding: 60px 20px 0;
+        text-align: center;
+    }
 
     .Benefits {
         background-image: unset;
@@ -970,8 +989,28 @@ header label:hover {
         margin-left: auto;
     }
 
-    
+    .IPA {
+        flex-direction: column-reverse;
+    }
 
+    .IPA-image {
+        width: 65%;
+    }
+
+    .IPA h3 {
+        padding: 0px 20px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .IPA-image img {
+        width: 100%;
+    }
+
+    .SR h2 {
+        font-size: 24px;
+        font-weight: 350;
+    }
 
     .Benefits-wrapper h2 {
         text-shadow: unset;
@@ -1082,12 +1121,65 @@ header label:hover {
         font-size: 13px;
     }
 
+    .ModulesList-Features {
+        display: block;
+    }
+
+    .ModulesList {
+        width: 100%;
+    }
+
+    .row1, .row2, .row3 {
+        display: flex;
+        margin: 15px 0;
+    }
+
+    .ModulesList li {
+        margin: 0 10px;
+    }
+
+    .ModulesFeatures {
+        width: auto;
+        grid-gap: 20px;
+    }
 }
 
 
 /*----Screen for 650px or less------*/
 @media (max-width:650px){
-   
+    .row1, .row2, .row3 {
+        display: block;
+        margin: 0;
+    }
+
+    .ModulesList {
+        padding: 0;
+    }
+
+    .ModulesList li {
+        margin-bottom: 20px;
+    }
+    
+    .ModulesFeatures li {
+        font-size: 16px;
+    }
+
+    .IPA-image {
+        width: 80%;
+    }
+
+    .IPA h3 {
+        padding: 20px 0;
+        margin: 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .SR-image {
+        padding: 10px;
+        width: 80%;
+    }
+
     .phone-img {
         height: 170px;
         top: -200px;
@@ -1112,7 +1204,10 @@ header label:hover {
 
 /*----Screen for 550px or less------*/
 @media (max-width:550px) {
-    
+    .phone-img {
+        height: 130px;
+        top: -133px;
+    }
 
     .Testimonials-content {
         width: 95vw;
@@ -1186,6 +1281,10 @@ header label:hover {
     .testimonial-person-photo img {
         width: 90px;
     }
+
+    /* .testimonial-person-details {
+        justify-content: space-evenly;
+    } */
 
     .person-name h3 {
         font-size: 15px;
