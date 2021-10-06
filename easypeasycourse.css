@@ -71,10 +71,6 @@ header label:hover {
     text-decoration: none;
 }
 
-/* #acelerador {
-    border-radius: 8px;
-    background-color: #9a58b6;
-} */
 
 .LoginButton a {
     text-decoration: none;
@@ -653,8 +649,6 @@ header label:hover {
 /*----Screen for 1150px or less------*/
 @media (max-width:1150px){
     
-
-
     .levelAcquire, .Modules-title-p {
         text-align: center;
     }
@@ -762,10 +756,6 @@ header label:hover {
     .IPA h3 {
         padding: 0px 5px;
     }
-
-    /* .IPA-image img {
-        width: 350px;
-    } */
 
     .SR-description {
         padding: 0px 5px;
@@ -878,7 +868,6 @@ header label:hover {
 
 /*----Screen for 768px or less------*/
 @media (max-width:768px){
-    
 
     /* HEADER */
     header {
@@ -1281,10 +1270,6 @@ header label:hover {
     .testimonial-person-photo img {
         width: 90px;
     }
-
-    /* .testimonial-person-details {
-        justify-content: space-evenly;
-    } */
 
     .person-name h3 {
         font-size: 15px;
