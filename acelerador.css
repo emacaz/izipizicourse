@@ -136,6 +136,7 @@ header label:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     cursor: pointer;
+    font-size: 18px;
 }
 .hero-links a:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -165,6 +166,8 @@ header label:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     cursor: pointer;
+    font-size: 18px;
+
 }
 #know-more:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -189,28 +192,6 @@ header label:hover {
 }
 
 
-/* CONOCE-MAS  OLD
-.conoce-mas-wrapper {
-    margin-bottom: 50px;
-}
-.conoce-mas-wrapper p {
-    text-align: center;
-    font-size: 20px;
-    margin: 60px auto;
-}
-.acelerador-description ul {
-    color: #fff;
-    font-size: 14px;
-    display: grid;
-    gap: 15px;
-    padding-right: 30px;
-
-}
-.acelerador-description ul a {
-    
-    color: #fff;
-}
-*/
 
 /* CONOCE-MAS NEW */
 
