@@ -82,6 +82,7 @@ header label:hover {
     background-color: #00d86a;
     border-radius: 8px;
     padding: 5px 5px;
+    font-size: 14px;
 }
 
 .LoginButton a:hover {
