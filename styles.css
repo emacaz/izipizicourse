@@ -218,6 +218,7 @@ header label:hover {
     grid-template-columns: repeat(auto-fill,276px);
     grid-template-rows: repeat(auto-fill,86px);
     -webkit-box-pack: center;
+    justify-content: center;
 }
 .courses-div a {
     display: flex;
@@ -1100,6 +1101,10 @@ header label:hover {
         top: -200px;
     }
 
+
+
+    
+
     /* FOOTER */
     .Footer-bottom {
         flex-direction: row;
@@ -1206,6 +1211,11 @@ header label:hover {
         font-size: 13px;
     }
 
+
+
+
+
+
     /* FOOTER */
     #mc_embed_signup_scroll {
         display: block;
@@ -1229,4 +1239,5 @@ header label:hover {
     .clear input {
         width: 100%;
     }
+    /* FOOTER */
 }
