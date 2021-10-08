@@ -271,6 +271,12 @@ header label:hover {
     background-color: #078b28;
     transition: .3s;
 }
+
+.CTA p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
 /* CTA */
 
 
