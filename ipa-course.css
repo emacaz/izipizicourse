@@ -180,18 +180,29 @@ header label:hover {
 }
 
 .module-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px 1fr 2fr;
+    margin: 0 50px 50px 0;
     align-items: center;
-    margin: 0 50px 30px 0;
 }
 .module-content img {
     width: 80px;
     border: 1px solid;
     border-radius: 50%;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
 }
-
 .module-content figure {
     position: relative;
+}
+
+.m1 img, .m2 img, .m3 img {
+    background-color: #FBF733;
+}
+.m4 img {
+    background-color: #2879AF;
+}
+.m5 img {
+    background-color: #174665;
 }
 
 .module-content span {
@@ -200,12 +211,16 @@ header label:hover {
     width: 2px;
     left: 48%;
     top: 81px;
-    height: 28px;
+    height: 38px;
 }
 
 
 .module-name {
-    margin: 0 30px;
+    margin: 0 25px 0 15px;
+}
+
+.module-description {
+    margin-left: 20px;
 }
 
 .advantages-container {
@@ -240,7 +255,7 @@ header label:hover {
     margin: 0 0 50px 0;
 }
 .cta-button {
-    width: 40vw;
+    width: 50vw;
     margin: auto;
 }
 .cta-button a {
@@ -255,6 +270,12 @@ header label:hover {
 .cta-button a:hover {
     background-color: #078b28;
     transition: .3s;
+}
+
+.CTA p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
 }
 /* CTA */
 

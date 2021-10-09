@@ -197,7 +197,21 @@
 
             <div class="know-more-buy-button-div">
                 <div class="buy-button">
-                    <a href="https://payment.hotmart.com/S56061319A?off=6zw9rb4o&checkoutMode=10">Apartar cupo ahora</a>
+                    
+
+                    <script type="text/javascript">
+                        function importHotmart(){ 
+                             var imported = document.createElement('script'); 
+                             imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                             document.head.appendChild(imported); 
+                            var link = document.createElement('link'); 
+                            // link.rel = 'stylesheet'; 
+                            // link.type = 'text/css'; 
+                            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                            document.head.appendChild(link);	} 
+                         importHotmart(); 
+                     </script> 
+                     <a onclick="return false;" href="https://pay.hotmart.com/S56061319A?checkoutMode=2&off=6zw9rb4o" class="hotmart-fb hotmart__button-checkout">Apartar cupo ahora</a> 
                 </div>
             </div>
 
