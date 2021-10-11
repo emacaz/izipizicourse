@@ -83,6 +83,13 @@ header label:hover {
     background-color: #fcfb1e;
     transition: .4s;
 }
+/* HEADER */
+
+
+
+
+
+
 
 /*----------Hero----------*/
 .Hero {
@@ -901,6 +908,7 @@ header label:hover {
     #btn-menu:checked ~ .menu {
         margin: 52px 0;
     }
+
 
     /*--------- HERO SECTION --------*/
     .Hero {

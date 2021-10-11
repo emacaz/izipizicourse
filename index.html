@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>izipizicourse: The biggest languages platform in the world</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -36,6 +36,74 @@
             <a href="https://izipizicourse.club.hotmart.com/login">Iniciar Sesión</a>
         </div>
     </header>
+
+    <div class="Ads">
+        <style>
+            .Ads {
+                position: re;
+                -webkit-font-smoothing: antialiased;
+                background: rgb(131,58,180);
+                background: linear-gradient(82deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            }
+
+            .Ads-wrapper {
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto 86px;
+                align-items: center;
+                color: #fff;
+            }
+
+            .Ads-wrapper a {
+                padding: 5px;
+                width: 80px;
+                background-color: #00d86a;
+                color: #000;
+                text-decoration: none;
+                font-size: 18px;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+            }
+            .Ads-wrapper a:hover {
+                background-color: #037a3d;
+            }
+
+            .Ads-wrapper h3 {
+                font-size: 24px;
+                -webkit-text-stroke: 1px #01257d;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            .Ads-wrapper h2 {
+                margin: 0px 10px;
+                text-align: right;
+                color: #163b53;
+            }
+
+            @media (max-width: 768px) {
+                .Ads-wrapper a {
+                    width: 60px;
+                }
+                .Ads-wrapper h3 {
+                    font-size: 18px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                .Ads-wrapper h2 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="u-wrapper Ads-wrapper">
+            <h3>Sólo por hoy, programa de 1 año 50% OFF</h3>
+            <h2 id="countdown"></h2>
+            <a href="./epc-planes.html">Aquí</a>
+        </div>
+    </div>
  
     <div class="Hero">
         <div class="u-wrapper Hero-wrapper">
@@ -549,5 +617,6 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./countdown.js"></script>
 </body>
 </html>
