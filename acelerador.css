@@ -283,10 +283,11 @@ header label:hover {
     background-color: #3498db;
     background-image: url("./images/m0.png");
     background-position: center center;
+    background-size: contain;
     color: #fff;
     border-radius: 12px;
     width: 255px;
-    height: 106px;
+    height: 90px;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
     display: flex;
     flex-direction: column;
@@ -306,7 +307,7 @@ header label:hover {
     color: #000;
     border-radius: 12px;
     width: 255px;
-    height: 106px;
+    height: 90px;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
     display: flex;
     flex-direction: column;
@@ -338,9 +339,9 @@ header label:hover {
 }
 
 .schedules-section-items-div {
-    height: 481px;
+    height: auto;
     width: 310px;
-    padding: 11px 0;
+    padding: 15px 20px 25px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,7 +350,7 @@ header label:hover {
     border-radius: 8px;
 }
 .schedules-section-items-div ul {
-    font-size: 14px;
+    font-size: 16px;
 }
 .schedules-section-items-div p {
     font-size: 12px;
@@ -360,7 +361,7 @@ header label:hover {
     border: 1px solid #000;
     display: flex;
     align-items: center;
-    margin: 0 0 7px 0;
+    margin: 0 -20px 7px 0;
     padding-right: 15px;
 }
 .groups-list {
@@ -382,6 +383,7 @@ header label:hover {
     display: flex;
     align-items: center;
     padding-right: 19px;
+    margin: 0 -20px 0px 0;
 }
 .group2-div ul {
     list-style: none;
@@ -396,7 +398,7 @@ header label:hover {
 }
 
 .plus-section-items-div {
-    height: 463px;
+    height: auto;
     width: 290px;
     padding: 15px 20px 25px 0;
     position: relative;
@@ -418,7 +420,7 @@ header label:hover {
     font-family: 'Roboto', sans-serif;
     display: grid;
     gap: 16px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .plus-section-items-div ul a {
@@ -459,14 +461,14 @@ header label:hover {
 .buy-button a {
     background-color: #68da6c;
     border-radius: 8px;
-    padding: 10px 88px;
+    padding: 12px 78px;
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 20px;
 }
 .buy-button a:hover {
     background-color: #fcfb1e;
-    transition: .3s;
+    transition: .2s;
 }
 
 
