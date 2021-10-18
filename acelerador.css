@@ -244,13 +244,22 @@ header label:hover {
     border-radius: 8px;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
     margin: 0 0 25px 0;
-
 }
+
 .instructor-info-div figure {
     margin: 10px 6px 10px 20px;
 }
-.instructor-info-div img {
+.instructor-photo img {
     height: 80px;
+}
+
+.instructor-photo img:hover {
+    cursor: pointer;
+    position:relative;
+    width:200px;
+    height:auto;
+    display:block;
+    transition: .5s;
 }
 
 .instructor-name p {
@@ -468,7 +477,7 @@ header label:hover {
 }
 .buy-button a:hover {
     background-color: #fcfb1e;
-    transition: .2s;
+    transition: .5s;
 }
 
 

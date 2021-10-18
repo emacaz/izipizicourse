@@ -37,6 +37,73 @@
         </div>
     </header>
 
+    <div class="Ads Acelerador-Ads">
+        <style>
+            .Ads {
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+                background: rgb(209,235,24);
+                background: linear-gradient(82deg, rgba(209,235,24,1) 49%, rgba(253,29,29,1) 93%, rgba(252,69,69,1) 100%);
+            }
+
+            .Ads-wrapper {
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto 90px;
+                align-items: center;
+                color: #fff;
+            }
+
+            .Ads-wrapper a {
+                margin: auto 5px;
+                padding: 5px;
+                background-color: #00d86a;
+                color: #000;
+                text-decoration: none;
+                font-size: 100%;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+            }
+            .Ads-wrapper a:hover {
+                background-color: #deee05;
+            }
+
+            .Ads-wrapper h3 {
+                font-size: 24px;
+                color: #163b53;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            .Ads-wrapper h2 {
+                margin: 0px 10px;
+                text-align: right;
+                color: #000;
+            }
+
+            @media (max-width: 768px) {
+
+                .Ads-wrapper h3 {
+                    font-size: 18px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                .Ads-wrapper h2 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="u-wrapper Ads-wrapper">
+            <h3>Inscripciones abiertas para el <u>Acelerador</u></h3>
+            <h2 id="countdown"></h2>
+             <a href="./acelerador.html"><strong>Aquí</strong></a>
+
+        </div>
+    </div>
+
     <!-- <div class="Ads">
         <style>
             .Ads {
@@ -619,5 +686,6 @@
     
     <script src="./script.js"></script>
     <script src="./countdown.js"></script>
+    <script src="./acelerador-countdown.js"></script>
 </body>
 </html>

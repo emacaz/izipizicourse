@@ -35,13 +35,96 @@
         </div>
     </header>
 
+    <div class="Ads">
+        <style>
+            .Ads {
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+                background: rgb(209,235,24);
+                background: linear-gradient(82deg, rgba(209,235,24,1) 49%, rgba(253,29,29,1) 93%, rgba(252,69,69,1) 100%);
+            }
+
+            .Ads-wrapper {
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto 90px;
+                align-items: center;
+                color: #fff;
+            }
+
+            .Ads-wrapper a {
+                margin: auto 5px;
+                padding: 5px;
+                background-color: #00d86a;
+                color: #000;
+                text-decoration: none;
+                font-size: 100%;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+            }
+            .Ads-wrapper a:hover {
+                background-color: #deee05;
+            }
+
+            .Ads-wrapper h3 {
+                font-size: 24px;
+                color: #163b53;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            .Ads-wrapper h2 {
+                margin: 0px 10px;
+                text-align: right;
+                color: #000;
+            }
+
+            @media (max-width: 768px) {
+
+                .Ads-wrapper h3 {
+                    font-size: 18px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                .Ads-wrapper h2 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="u-wrapper Ads-wrapper">
+            <h3>Días para iniciar el Acelerador Versión 2.0</h3>
+            <h2 id="countdown"></h2>
+            
+
+            <script type="text/javascript">
+                function importHotmart(){ 
+                     var imported = document.createElement('script'); 
+                     imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                     document.head.appendChild(imported); 
+                    var link = document.createElement('link'); 
+                    // link.rel = 'stylesheet'; 
+                    // link.type = 'text/css'; 
+                    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                    document.head.appendChild(link);	} 
+                 importHotmart(); 
+             </script> 
+             <a onclick="return false;" href="https://pay.hotmart.com/S56061319A?checkoutMode=2&off=pb05hwlt" class="hotmart-fb hotmart__button-checkout">Inscríbete</a>
+
+
+
+        </div>
+    </div>
+
     <div class="hero">
         <div class="u-wrapper hero-wrapper">
             <div class="hero-description">
 
                 <div class="hero-titles">
                     <h1>Acelerador de Inglés</h1>
-                    <p>Programa de entrenamiento de 3 meses <strong>con salas grupales en Zoom</strong> para hablar inglés, <strong>CUPO LIMITADO</strong>, enfocado a principiantes, y cada sesión por sólo <span  style="color: #68da6c;"><strong>$2 dólares y material GRATIS</strong></span>.</p>
+                    <p>Programa de entrenamiento de <strong>3 meses con salas grupales en Zoom</strong> para hablar inglés, <strong>CUPO LIMITADO</strong>, y cada sesión por sólo <span  style="color: #68da6c;"><strong>$2 dólares y material GRATIS</strong></span>.</p>
                 </div>
 
                 <div class="hero-links">
@@ -83,7 +166,7 @@
                             <li>
                                 <p><strong>Instructores </strong>Sesiones de Zoom:</p>
                                 <div class="instructor-info-div">
-                                    <figure><img src="./images/eren-photo.png" alt="Instructor eren-photo"></figure>
+                                    <figure class="instructor-photo"><img src="./images/eren-photo.png" alt="Instructor eren-photo"></figure>
                                     <div class="instructor-info">
                                         <div class="instructor-name">
                                             <p><strong>Mr. Eren Doğan</strong></p>
@@ -98,7 +181,7 @@
                                 </div>
 
                                 <div class="instructor-info-div">
-                                    <figure><img src="./images/emanuel-photo.png" alt="Instructor eren-photo"></figure>
+                                    <figure class="instructor-photo"><img src="./images/emanuel-photo.png" alt="Instructor eren-photo"></figure>
                                     <div class="instructor-info">
                                         <div class="instructor-name">
                                             <p><strong>Emanuel Castillo</strong></p>
@@ -348,5 +431,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./acelerador-countdown.js"></script>
+
 </body>
 </html>
