@@ -179,16 +179,25 @@ header label:hover {
 
 .hero-img {
     width: 50%;
+    text-align: center;
 }
 
-.hero-img img{
+.hero-img figure {
+    margin: 40px;
+}
+
+.hero-img iframe {
     width: 100%;
+    height: 360px;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
+    border: none;
+    border-radius: 5px;
 }
 
 
 /* LINE */
 .line {
-    margin: 30px auto;
+    margin: 6rem auto 30px auto;
     width: 40vw;
     border-bottom: 1px solid white;
 }
@@ -203,6 +212,10 @@ header label:hover {
 
 .conoce-mas-wrapper {
     padding-bottom: 50px;
+}
+
+.know-more-title-div {
+    padding: 0 20px;
 }
 
 .know-more-title-div p {
@@ -471,7 +484,7 @@ header label:hover {
 .buy-button a {
     background-color: #68da6c;
     border-radius: 8px;
-    padding: 12px 78px;
+    padding: 8px 78px;
     text-decoration: none;
     color: #000;
     font-size: 20px;
@@ -730,6 +743,14 @@ header label:hover {
         margin: 0;
     }
 
+    .hero-img iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* HERO */
+
 
     /* FOOTER */
     .footer-form {
@@ -775,6 +796,18 @@ header label:hover {
 
 /*----Screen for 910px or less------*/
 @media (max-width:910px){
+
+
+    /* HERO */
+    .hero-img iframe {
+        width: 100%;
+        height: 250px;
+    }
+    /* HERO */
+
+
+
+
 
     /* FOOTER */
     .mc-field-group label {
@@ -855,7 +888,14 @@ header label:hover {
         width: auto;
     }
     .hero-img figure {
-        padding: 0 40px;
+        padding: 0 10px;
+
+    }
+
+    .hero-img iframe {
+        width: 80vw;
+        height: 444px;
+        border-radius: 5px;
     }
 
 
@@ -921,6 +961,16 @@ header label:hover {
 /*----Screen for 650px or less------*/
 @media (max-width:650px) {
 
+    /* HERO */
+    .hero-img iframe {
+        width: 80vw;
+        height: 366px;
+    }
+    /* HERO */
+
+
+
+
     /* FOOTER */
     .Footer-bottom {
         flex-direction: row;
@@ -940,6 +990,17 @@ header label:hover {
 
 /*----Screen for 550px or less------*/
 @media (max-width:550px) {
+
+
+    /* HERO */
+    .hero-img iframe {
+        display: block;
+        height: 300px;
+    }
+    /* HERO */
+
+
+
 
     /* FOOTER */
     .Footer-logo-social {
@@ -962,6 +1023,13 @@ header label:hover {
 
 /*----Screen for 450px or less------*/
 @media (max-width:450px) {
+
+    /* HERO */
+    .hero-img iframe {
+        display: block;
+        height: 200px;
+    }
+    /* HERO */
 
     /* FOOTER */
     #mc_embed_signup_scroll {
