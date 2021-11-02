@@ -53,6 +53,7 @@ body {
 }
 .modal-content {
     margin: auto;
+    padding: 0 20px;
 }
 .title1 {
     color: #fff;
@@ -69,17 +70,19 @@ body {
     font-size: 50px;
     margin: 0;
 }
-.modal-content a {
-    display: block;
-    padding: 8px;
-    margin: 10px;
+.modal-content button {
+    border: none;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
     background: #00d86a;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
     color: #000;
+    font-size: 18px;
 }
-.modal-content a:hover {
+.modal-content button:hover {
     background: #026934;
     cursor: pointer;
 }

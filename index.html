@@ -12,12 +12,24 @@
 
     <input type="checkbox" id="closeWindow">
         <label for="closeWindow" id="closeWindow-btn">X</label>
-        <div class="modal">
+        <div class="modal" id="modalElement">
             <div class="modal-content">
                 <img src="./images/blacknovember.png" alt="BlackNovember Image">
                 <p class="title1"><i><b>Descuentazos</b> en nuestros <b>programa de estudio</b><br>durante todo  <b>Noviembre</b></i></p>
                 <p class="title2"><b>Planea tu 2022</b></p>
                 <p class="title2-2"><span style="font-size: 18px;">desde ahora</span> <strong>aprendiendo Inglés</strong></p>
+                
+                <button onclick="goToCourses()">Ver cursos</button>
+                <script>
+                    function goToCourses() {
+                        modalElement = document.getElementById("modalElement")
+                        closeWindowElement = document.getElementById("closeWindow-btn")
+
+                        modalElement.style.display = "none"
+                        closeWindowElement.style.display = "none"
+                        window.location="#courses"
+                    }
+                </script>
             </div>
         </div>
     
