@@ -8,9 +8,119 @@ body {
     background-color: #2879af;
 }
 
+/* VENTANA MODAL */
+#closeWindow {
+    display: none;
+}
+#closeWindow + label {
+    color: #fff;
+    font-size: 24px;
+    background: red;
+    position: fixed;
+    right: 20px;
+    line-height: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+
+    animation: closeWindow 1s 1s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#closeWindow:checked + label, #closeWindow:checked ~ .Ads-BlackNovember, #closeWindow:checked ~ .modal {
+    display: none;
+}
+
+#closeWindow + label:hover {
+    background: rgb(71, 3, 3);
+}
+.modal {
+    position: fixed;
+    margin: auto;
+    background: rgba(0, 0, 0, .94);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 49;
+
+    animation: closeWindow 1s 1s forwards;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.modal-content {
+    margin: auto;
+}
+.title1 {
+    color: #fff;
+    font-size: 24px;
+}
+.title2 {
+    color: #fff;
+    color: #00d86a;
+    font-size: 60px;
+    margin: 0;
+}
+.title2-2 {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+}
+.modal-content a {
+    display: block;
+    padding: 8px;
+    margin: 10px;
+    background: #00d86a;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+.modal-content a:hover {
+    background: #026934;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    
+}
+
+@keyframes closeWindow {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .title1 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .title2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .title2-2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    #closeWindow + label {
+        top: 90px;
+    }
+}
+
+/* VENTANA MODAL */
+
 
 /* HEADER */
 header {
+    position: relative;
     width: 100%;
     height: 52px;
     background: #3498db;
@@ -19,8 +129,6 @@ header {
     grid-template-columns: 130px auto 100px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
     font-size: 14px;
-    position: relative;
-    z-index: 1;
 }
 
 .Logo {
@@ -57,6 +165,7 @@ header label:hover {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    font-size: 16px;
 }
 .menu li:hover {
     background-color: rgba(0, 0, 0, 0.2);
@@ -94,6 +203,7 @@ header label:hover {
 
 /*----------Hero----------*/
 .Hero {
+    position: relative;
     background-image: url("./images/hero-section.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -221,6 +331,7 @@ header label:hover {
     color: #fff;
 }
 .courses-div {
+    position: relative;
     display: grid;
     grid-gap: 1.2rem;
     grid-template-columns: repeat(auto-fill,276px);
@@ -229,6 +340,7 @@ header label:hover {
     justify-content: center;
 }
 .courses-div a {
+    position: relative;
     display: flex;
     align-items: center;
     background-color: #3498DB;
@@ -246,6 +358,18 @@ header label:hover {
     height: 50px;
     margin-right: 8px;
     border-radius: .3rem;
+}
+
+.BN-ticket {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: -26px;
+    right: -28px;
+}
+.BN-ticket img {
+    padding: 0;
+    margin: 0;
 }
 
 #accelerator, #ipa {

@@ -34,6 +34,78 @@
         </div>
     </header>
 
+    <div class="Ads BlackNovember-Ads">
+        <style>
+            .Ads {
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+                background: black;
+            }
+
+            .Ads-wrapper {
+                margin: auto;
+                display: grid;
+                grid-template-columns: 100px auto 200px;
+                align-items: center;
+                color: #fff;
+            }
+            .Ads-wrapper img {
+                height: 50px;
+            }
+
+            .Ads-wrapper a {
+                margin: auto 5px;
+                padding: 5px;
+                background-color: #00d86a;
+                color: #000;
+                text-decoration: none;
+                font-size: 100%;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+            }
+            .Ads-wrapper a:hover {
+                background-color: #deee05;
+            }
+
+            .Ads-wrapper h3 {
+                font-size: 24px;
+                color: #fff;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            .Ads-wrapper h2 {
+                margin: 0px 10px;
+                text-align: right;
+                color: #000;
+            }
+
+            @media (max-width: 768px) {
+
+                .Ads-wrapper {
+                    grid-template-columns: 100px auto auto;
+                }
+
+                .Ads-wrapper h3 {
+                    font-size: 16px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                .Ads-wrapper h2 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="u-wrapper Ads-wrapper">
+            <img src="./images/blacknovember.png" alt="BlackNovember Image">
+            <h3>Descuentos en Noviember para planear tu 2022</h3>
+             <a href="#empezar-ahora-button"><strong>Empieza ahora</strong></a>
+        </div>
+    </div>
+
     <div class="Hero">
         <div class="u-wrapper Hero-wrapper">
 
@@ -226,9 +298,14 @@
         </div>
     </div>
 
-    <div class="CTA">
+    <div class="CTA" id="empezar-ahora-button">
         <div class="u-wrapper CTA-wrapper">
+
             <div class="cta-button">
+
+                <figure class="BN-ticket">
+                    <img src="./images/blacknovember-ticket.png" alt="BlackNovember ticket">
+                </figure>
 
                 <script type="text/javascript">
                     function importHotmart(){ 
@@ -242,7 +319,10 @@
                         document.head.appendChild(link);	} 
                      importHotmart(); 
                  </script> 
-                 <a onclick="return false;" href="https://pay.hotmart.com/U48959078C?checkoutMode=2&off=imw7itmp" class="hotmart-fb hotmart__button-checkout">Empezar ahora</a>
+                 <a onclick="return false;" href="https://pay.hotmart.com/U48959078C?checkoutMode=2&off=imw7itmp" class="hotmart-fb hotmart__button-checkout">Empezar ahora - BlackNovember <strong>20%OFF</strong></a>
+                
+                 <p><strong>*Usa el cupón: BLACKNOVEMBER20</strong></p>
+
             </div>
         </div>
     </div>

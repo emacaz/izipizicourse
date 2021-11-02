@@ -9,6 +9,18 @@
 </head>
 
 <body>
+
+    <input type="checkbox" id="closeWindow">
+        <label for="closeWindow" id="closeWindow-btn">X</label>
+        <div class="modal">
+            <div class="modal-content">
+                <img src="./images/blacknovember.png" alt="BlackNovember Image">
+                <p class="title1"><i><b>Descuentazos</b> en nuestros <b>programa de estudio</b><br>durante todo  <b>Noviembre</b></i></p>
+                <p class="title2"><b>Planea tu 2022</b></p>
+                <p class="title2-2"><span style="font-size: 18px;">desde ahora</span> <strong>aprendiendo Inglés</strong></p>
+            </div>
+        </div>
+    
     <header>        
         <div class="Logo">
             <a href="#">
@@ -36,8 +48,80 @@
             <a href="https://izipizicourse.club.hotmart.com/login">Iniciar Sesión</a>
         </div>
     </header>
+    
+    <div class="Ads BlackNovember-Ads">
+        <style>
+            .Ads {
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+                background: black;
+            }
 
-    <div class="Ads Acelerador-Ads">
+            .Ads-wrapper {
+                margin: auto;
+                display: grid;
+                grid-template-columns: 100px auto 200px;
+                align-items: center;
+                color: #fff;
+            }
+            .Ads-wrapper img {
+                height: 50px;
+            }
+
+            .Ads-wrapper a {
+                margin: auto 5px;
+                padding: 5px;
+                background-color: #00d86a;
+                color: #000;
+                text-decoration: none;
+                font-size: 100%;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+            }
+            .Ads-wrapper a:hover {
+                background-color: #deee05;
+            }
+
+            .Ads-wrapper h3 {
+                font-size: 24px;
+                color: #fff;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            .Ads-wrapper h2 {
+                margin: 0px 10px;
+                text-align: right;
+                color: #000;
+            }
+
+            @media (max-width: 768px) {
+
+                .Ads-wrapper {
+                    grid-template-columns: 100px auto auto;
+                }
+
+                .Ads-wrapper h3 {
+                    font-size: 16px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                .Ads-wrapper h2 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="u-wrapper Ads-wrapper">
+            <img src="./images/blacknovember.png" alt="BlackNovember Image">
+            <h3>Descuentos en Noviembre para planear tu 2022</h3>
+             <a href="#courses"><strong>Clic aquí</strong></a>
+        </div>
+    </div>
+
+    <!-- <div class="Ads Acelerador-Ads">
         <style>
             .Ads {
                 position: relative;
@@ -49,7 +133,7 @@
             .Ads-wrapper {
                 margin: auto;
                 display: grid;
-                grid-template-columns: auto auto 90px;
+                grid-template-columns: auto auto auto;
                 align-items: center;
                 color: #fff;
             }
@@ -102,7 +186,7 @@
              <a href="./acelerador.html"><strong>Aquí</strong></a>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- <div class="Ads">
         <style>
@@ -214,6 +298,9 @@
                         
                         <div class="courses-div beginner-courses">
                             <a href="./ep-course.html" target="_blank">
+                                <figure class="BN-ticket">
+                                    <img src="./images/blacknovember-ticket.png" alt="BlackNovember ticket">
+                                </figure>
                                 <img src="./images/epc-image.png" alt="epc logo">
                                 <p><strong>EasyPeasyCourse</strong><br>Programa de 12 meses</p>
                             </a>
@@ -228,10 +315,16 @@
                         <h3>Niveles: B1 - B2</h3>
                         <div class="courses-div advanced-courses">
                             <a href="./greasy-course.html" target="_blank">
+                                <figure class="BN-ticket">
+                                    <img src="./images/blacknovember-ticket.png" alt="BlackNovember ticket">
+                                </figure>
                                 <img src="./images/greasy-logo.png" alt="Greasy logo">
                                 <p><strong>Greasy</strong><br>Advanced Grammar (PDF)</p>
                             </a>
                             <a href="./ipa-course.html" target="_blank">
+                                <figure class="BN-ticket">
+                                    <img src="./images/blacknovember-ticket.png" alt="BlackNovember ticket">
+                                </figure>
                                 <img src="./images/ipa-course-image.png" alt="IPA img">
                                 <p><strong>Curso de IPA</strong><br>Alfabeto Fonético</p>
                             </a>
