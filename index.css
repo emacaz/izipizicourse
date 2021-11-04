@@ -361,6 +361,7 @@ header label:hover {
     height: 50px;
     margin-right: 8px;
     border-radius: .3rem;
+    /* filter: drop-shadow(2px 2px 28px black); */
 }
 
 .BN-ticket {
