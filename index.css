@@ -696,6 +696,27 @@ header label:hover {
     height: 290px;
 }
 
+.start-studying {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+.start-studying a {
+    display: block;
+    width: 550px;
+    padding: 8px;
+    color: #000;
+    background-color: #00d86a;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.start-studying a:hover {
+    background-color: #037038;
+}
 /* RESULTS SECTION */
 
 
