@@ -938,7 +938,8 @@ header label:hover {
     #mc_embed_signup div.mce_inline_error {
         bottom: -32px;
         left: 0;
-    }    
+    }
+    /* FOOTER */
 }
 
 
@@ -1114,6 +1115,7 @@ header label:hover {
     #btn-menu:checked ~ .menu {
         margin: 52px 0;
     }
+    /* HEADER */
 
 
     /*--------- HERO SECTION --------*/
@@ -1366,6 +1368,7 @@ header label:hover {
     .footer-form input {
         margin: 0 10px;
     }
+    /* FOOTER */
 }
 
 
