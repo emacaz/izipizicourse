@@ -751,7 +751,8 @@ header label:hover {
 }
 
 .Footer-social p {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 14px;
 }
 
 .Footer-social-icons {
