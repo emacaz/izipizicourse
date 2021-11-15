@@ -287,18 +287,18 @@ header label:hover {
 #item-options {
     border-radius: 9px;
     border: none;
-    width: 210px;
+    width: 225px;
     height: 23px;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
 }
 #quantitySelect {
     border-radius: 9px;
     border: none;
-    /* width: 40px; */
+    width: 40px;
     height: 23px;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -697,6 +697,16 @@ header label:hover {
     }
     
     /* CONTENT */
+
+
+    /* CTA */
+
+    .cta-button {
+        width: 100%;
+    }
+
+
+    /* CTA */
 
     
 
