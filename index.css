@@ -741,6 +741,9 @@ header label:hover {
 .Footer-logo figure {
     margin: 0;
 }
+.Footer-logo img {
+    width: 250px;
+}
 
 .Footer-logo p {
     font-size: 16px;
