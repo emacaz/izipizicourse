@@ -197,7 +197,7 @@ header label:hover {
     display: grid;
     grid-template-columns: 80px 1fr 2fr;
     margin: 0 50px 50px 0;
-    align-items: center;
+    align-items: self-start;
 }
 .module-content img {
     width: 80px;
@@ -284,9 +284,7 @@ header label:hover {
     border-radius: 10px;
 }
 .cta-button a:hover {
-    cursor: no-drop;
-    /* background-color: #078b28; */
-    background-color: #515251;
+    background-color: #078b28;
     transition: .3s;
 }
 
