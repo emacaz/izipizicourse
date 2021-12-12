@@ -145,6 +145,15 @@ header label:hover {
     line-height: 1.6;
     margin: 0;
 }
+
+#countdown {
+    border-radius: 4px;
+    color: #000;
+    background: rgb(209,235,24);
+    background: linear-gradient(82deg, rgba(209,235,24,1) 49%, rgba(253,29,29,1) 93%, rgba(252,69,69,1) 100%);
+}
+
+
 .PriceCard-description {
     margin: 0;
     color: #becde3;
