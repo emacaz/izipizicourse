@@ -96,6 +96,19 @@ header label:hover {
 
 
 /* PLANS */
+.hero-christmas {
+    background-image: url("./images/epc-planes-hero-section-christmas2.png");
+    background-color: #2879af;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    min-height: 742px;
+    color: #fff;
+    position: relative;
+}
+
+
 .hero-wrapper {
     display: flex;
     flex-direction: column;
