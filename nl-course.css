@@ -284,9 +284,8 @@ header label:hover {
     border-radius: 10px;
 }
 .cta-button a:hover {
-    cursor: no-drop;
-    /* background-color: #078b28; */
-    background-color: #515251;
+    cursor: pointer;
+    background-color: #05e72b;
     transition: .3s;
 }
 
