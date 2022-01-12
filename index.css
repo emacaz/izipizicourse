@@ -393,8 +393,9 @@ header label:hover {
 .level-div {
     margin-bottom: 4rem;
 }
-.level-div h3 {
+.level-div h4 {
     color: #fff;
+    text-align: center;
 }
 .courses-div {
     position: relative;
