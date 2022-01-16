@@ -1189,7 +1189,7 @@ header label:hover {
 
     /*--------- HERO SECTION --------*/
     .Hero {
-        background-image: url("./images/hero-section-768px-christmas.png");
+        background-image: url("./images/hero-section-768px.png");
         background-color: #2879af;
         background-repeat: no-repeat;
         background-position: center center;
