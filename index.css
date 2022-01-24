@@ -90,8 +90,9 @@ body {
 }
 
 .modal-content img {
-    width: 100%;
-    
+    display: block;
+    margin: auto;
+    width: 70%;
 }
 
 @keyframes closeWindow {
@@ -214,7 +215,7 @@ header label:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 650px;
+    min-height: 700px;
     color: #fff;
 }
 
@@ -240,6 +241,7 @@ header label:hover {
     font-size: 48px;
     font-weight: 900;
     -webkit-text-stroke: 2px black;
+    margin-bottom: 1rem;
 }
 
 .Hero-description {
@@ -310,8 +312,20 @@ header label:hover {
     text-decoration: none;
 }
 
-.vertical-background-image {
-    display: none;
+.background-image {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: -31px;
+}
+.background-image figure {
+    margin: 0 20px;
+}
+.background-image img {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
 /* HERO */
 
@@ -1195,7 +1209,7 @@ header label:hover {
         background-position: center center;
         background-size: cover;
         height: auto;
-        min-height: 742px;
+        min-height: 620px;
         color: #fff;
         position: relative;
     }
@@ -1445,6 +1459,7 @@ header label:hover {
 @media (max-width:450px){
     .Hero {
         background-image: unset;
+        min-height: 500px;
     }
 
     .LeftContent {

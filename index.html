@@ -60,6 +60,28 @@
             </div>
         </div> -->
 
+
+        <input type="checkbox" id="closeWindow">
+        <label for="closeWindow" id="closeWindow-btn">X</label>
+        <div class="modal" id="modalElement">
+            <div class="modal-content novedades-website">
+                <img src="./images/vertical-background-image.png" alt="Emanuel Castillo">
+                <p class="title2-2"><strong>Estamos mejorando para ti...</strong></p>
+                
+                <button onclick="goToCourses()">Ver novedades</button>
+                <script>
+                    function goToCourses() {
+                        modalElement = document.getElementById("modalElement")
+                        closeWindowElement = document.getElementById("closeWindow-btn")
+
+                        modalElement.style.display = "none"
+                        closeWindowElement.style.display = "none"
+                        window.location="#"
+                    }
+                </script>
+            </div>
+        </div>
+
     
     <header>        
         <div class="Logo">
@@ -318,9 +340,9 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-background-image">
+        <div class="background-image">
             <figure>
-                <img src="./images/vertical-background-image.png" alt="Hello bilingüe">
+                <img src="./images/ipc-team.png" alt="Hello bilingüe">
             </figure>
         </div>
     </div>
