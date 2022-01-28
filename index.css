@@ -57,21 +57,12 @@ body {
     margin: auto;
     padding: 0 20px;
 }
-.title1 {
-    color: #fff;
-    font-size: 24px;
+
+#countdown {
+    color: white;
+    text-align: center;
 }
-.title2 {
-    color: #fff;
-    color: #00d86a;
-    font-size: 60px;
-    margin: 0;
-}
-.title2-2 {
-    color: #fff;
-    font-size: 50px;
-    margin: 0;
-}
+
 .modal-content button {
     border: none;
     width: 100%;
