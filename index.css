@@ -61,6 +61,75 @@ body {
 #countdown {
     color: white;
     text-align: center;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.off-container-main {
+    padding: 10px 0;
+    background-color: #216694;
+    border-radius: 6px;
+}
+.off-container-main h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 5px auto;
+}
+.off-container {
+    display: flex;
+}
+@media (max-width: 680px) {
+    .off-container {
+        display: block;
+    }
+
+    .off-container-main h1, #countdown {
+        font-size: 20px;
+    }
+
+    #modal-content-main-img {
+        height: 170px;
+    }
+}
+.off-courses {
+    margin: 10px;
+    position: relative;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill,296px);
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.off-courses a {
+    height: 37px;
+    /* margin: 0 3px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #3498DB;
+    padding: .75rem 5px;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
+
+}
+.off-courses p {
+    color: white;
+}
+.off-courses a:hover {
+    background-color: #3bacf7;
+}
+.off-courses a img {
+    height: 50px;
+    margin-right: 8px;
+    border-radius: .3rem;
+    /* filter: drop-shadow(2px 2px 28px black); */
 }
 
 .modal-content button {
@@ -68,11 +137,11 @@ body {
     width: 100%;
     padding: 10px 10px;
     margin: 10px 0;
-    background: #00d86a;
+    background: #d83200;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 18px;
 }
 .modal-content button:hover {
@@ -80,10 +149,18 @@ body {
     cursor: pointer;
 }
 
-.modal-content img {
+#modal-content-main-img {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 90%;
+}
+
+.cta-button-marathon a {
+    display: block;
+    text-align: center;
+    background-color: #00d86a;
+    font-weight: 600;
+    border-radius: 4px;
 }
 
 @keyframes closeWindow {
