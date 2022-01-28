@@ -55,11 +55,13 @@ body {
 }
 .modal-content {
     margin: auto;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 #countdown {
-    color: white;
+    background: rgb(209,235,24);
+    background: linear-gradient(82deg, rgba(209,235,24,1) 31%, rgba(31,253,29,1) 100%, rgba(252,69,69,1) 100%);
+    color: #000;
     text-align: center;
     margin: 5px auto;
     border: 1px solid black;
@@ -80,21 +82,9 @@ body {
 .off-container {
     display: flex;
 }
-@media (max-width: 680px) {
-    .off-container {
-        display: block;
-    }
 
-    .off-container-main h1, #countdown {
-        font-size: 20px;
-    }
-
-    #modal-content-main-img {
-        height: 170px;
-    }
-}
 .off-courses {
-    margin: 10px;
+    margin: 3px 10px;
     position: relative;
     display: grid;
     grid-gap: 3px;
@@ -106,7 +96,7 @@ body {
     border-radius: 5px;
 }
 .off-courses a {
-    height: 37px;
+    height: 26px;
     /* margin: 0 3px; */
     position: relative;
     display: flex;
@@ -121,46 +111,54 @@ body {
 }
 .off-courses p {
     color: white;
+    font-size: 14px;
 }
 .off-courses a:hover {
     background-color: #3bacf7;
 }
 .off-courses a img {
-    height: 50px;
+    height: 40px;
     margin-right: 8px;
     border-radius: .3rem;
     /* filter: drop-shadow(2px 2px 28px black); */
 }
 
 .modal-content button {
+    font-weight: 600;
     border: none;
     width: 100%;
-    padding: 10px 10px;
-    margin: 10px 0;
+    padding: 5px;
+    margin: 5px 0;
     background: #d83200;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 .modal-content button:hover {
-    background: #026934;
+    color: #000;
     cursor: pointer;
 }
 
 #modal-content-main-img {
     display: block;
     margin: auto;
-    width: 90%;
+    /* width: 90%; */
 }
 
 .cta-button-marathon a {
+    padding: 5px 0;
+    height: unset;
     display: block;
     text-align: center;
     background-color: #00d86a;
     font-weight: 600;
     border-radius: 4px;
+}
+
+.cta-button-marathon a:hover {
+    background-color: #85e20b;
 }
 
 @keyframes closeWindow {
@@ -1452,6 +1450,20 @@ header label:hover {
 /*----Screen for 680px or less------*/
 @media (max-width:680px){
 
+    .off-container {
+        display: block;
+    }
+
+    .off-container-main {
+        padding-top: 3px;
+    }
+    .off-container-main h1, #countdown {
+        font-size: 20px;
+    }
+
+    #modal-content-main-img {
+        height: 170px;
+    }
 
     .CTA-form input::placeholder {
         font-size: 13px;
@@ -1528,6 +1540,14 @@ header label:hover {
     .Hero {
         background-image: unset;
         min-height: 500px;
+    }
+
+    .off-container-main {
+        margin-top: 0px;
+    }
+
+    #modal-content-main-img {
+        height: 145px;
     }
 
     .LeftContent {
