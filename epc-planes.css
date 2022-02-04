@@ -19,7 +19,7 @@ header {
     background: #3498db;
     align-items: center;
     display: grid;
-    grid-template-columns: 130px auto 100px;
+    grid-template-columns: 130px auto;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
     font-size: 14px;
     position: relative;
