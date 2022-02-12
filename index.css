@@ -59,8 +59,9 @@ body {
 }
 
 #countdown {
-    background: rgb(209,235,24);
-    background: linear-gradient(82deg, rgba(209,235,24,1) 31%, rgba(31,253,29,1) 100%, rgba(252,69,69,1) 100%);
+    /* background: rgb(235,24,85); */
+    /* background: linear-gradient(82deg, rgba(235,24,85,1) 31%, rgba(253,29,203,1) 100%, rgba(252,69,69,1) 100%); */
+    background-color: #fff;
     color: #000;
     text-align: center;
     margin: 5px auto;
@@ -71,13 +72,15 @@ body {
 
 .off-container-main {
     padding: 10px 0;
-    background-color: #216694;
+    /* background-color: #216694; */
+    background-color: #d61b8891;
     border-radius: 6px;
 }
 .off-container-main h1 {
     color: #fff;
     text-align: center;
     margin: 0 auto 5px auto;
+    font-size: 22px;
 }
 .off-container {
     display: flex;
