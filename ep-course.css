@@ -264,28 +264,134 @@ header label:hover {
 
 
 
-/* CTA */
-.CTA {
-    margin: 0 0 50px 0;
-}
-.cta-button {
-    width: 50vw;
-    margin: auto;
-}
-.cta-button a {
-    display: block;
-    background-color: #00d86a;
-    text-decoration: none;
-    color: #000;
-    padding: 8px;
+
+/* STUDY PLANS */
+
+.StudyPlans-title h1 {
+    color: #fff;
     text-align: center;
-    border-radius: 10px;
 }
-.cta-button a:hover {
-    background-color: #078b28;
-    transition: .3s;
+
+.PriceCard-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
 }
-/* CTA */
+
+
+.PriceCard {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #000;
+    border-radius: 12px;
+    padding: 1rem;
+    min-height: 520px;
+    height: auto;
+    width: 100%;
+}
+
+.PriceCard-recommended {
+    margin: 0 3rem;
+    background: #3498db;
+}
+
+.PriceCard-planInfo {
+    color: #fff;
+    text-align: center;
+}
+.PriceCard-planInfo h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#countdown {
+    border-radius: 4px;
+    color: #000;
+    background: rgb(209,235,24);
+    background: linear-gradient(82deg, rgba(209,235,24,1) 49%, rgba(253,29,29,1) 93%, rgba(252,69,69,1) 100%);
+}
+
+
+.PriceCard-description {
+    margin: 0;
+    color: #becde3;
+    font-size: .875rem;
+    line-height: 1.4;
+}
+.PriceCard-pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PriceCard-pricing img {
+    height: 1.55rem;
+}
+
+.PriceCard-price {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+.PriceCard-price-frequency {
+    font-size: 1.25rem;
+    color: #becde3;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.PriceCard-benefits-list {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: 5pt;
+}
+.PriceCard-benefits-list li {
+    font-size: 15px;
+    color: #eff3f8;
+    font-weight: 400;
+    letter-spacing: .25px;
+    line-height: 1.4;
+    margin-right: .25rem;
+}
+.PriceCard-benefits-list li::before {
+    content: url("./images/checked-symbol.png");
+    vertical-align: middle;
+}
+
+.PriceCard-button a {
+    text-decoration: none;
+    background-color: #00d86a;
+    color: #000;
+    border-radius: .5rem;
+    padding: 8px 50px;
+}
+.PriceCard-button a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.BN-ticket {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 46px;
+    right: 23px;
+}
+.BN-ticket img {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+/* STUDY PLANS */
 
 
 
@@ -671,6 +777,22 @@ header label:hover {
     }
     
     /* CONTENT */
+
+
+
+
+    /* STUDY PLANS */
+
+    /* PLANES */
+    .PriceCard-container {
+        flex-direction: column;
+    }
+
+    .PriceCard-recommended {
+        margin: 2rem 0;
+    }
+
+    /* STUDY PLANS */
 
     
 
