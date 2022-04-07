@@ -405,7 +405,7 @@ header label:hover {
     margin-bottom: 1rem;
 }
 .level-div {
-    margin-bottom: 4rem;
+    margin: 4rem auto;
 }
 .level-div h4 {
     color: #fff;
