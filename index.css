@@ -51,7 +51,7 @@ body {
     animation: closeWindow 1s 1s forwards;
     visibility: hidden;
     opacity: 0;
-    
+    overflow-y: auto;
 }
 .modal-content {
     margin: auto;
@@ -84,11 +84,11 @@ body {
 }
 
 .off-courses {
-    margin: 3px 10px;
+    margin: 3px 5px;
     position: relative;
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: repeat(auto-fill,296px);
+    grid-template-columns: repeat(auto-fill,260px);
     -webkit-box-pack: center;
     justify-content: center;
     border: 1px solid black;
@@ -1451,6 +1451,20 @@ header label:hover {
 /*----Screen for 680px or less------*/
 @media (max-width:680px){
 
+    .off-container {
+        display: block;
+    }
+
+    .off-container-main {
+        padding-top: 3px;
+    }
+    .off-container-main h1, #countdown {
+        font-size: 20px;
+    }
+
+    #modal-content-main-img {
+        height: 170px;
+    }
 
     .CTA-form input::placeholder {
         font-size: 13px;
