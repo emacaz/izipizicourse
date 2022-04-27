@@ -55,7 +55,7 @@ body {
 }
 .modal-content {
     margin: auto;
-    padding: 0 5px;
+    padding: 30px 5px;
 }
 
 #countdown {
@@ -88,10 +88,10 @@ body {
     position: relative;
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: repeat(auto-fill,260px);
+    grid-template-columns: repeat(auto-fill,265px);
     -webkit-box-pack: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px 5px;
     border-radius: 5px;
 }
@@ -1463,7 +1463,7 @@ header label:hover {
     }
 
     #modal-content-main-img {
-        height: 170px;
+        width: 276px;
     }
 
     .CTA-form input::placeholder {
