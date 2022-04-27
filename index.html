@@ -10,6 +10,95 @@
 </head>
 
 <body>
+    <input type="checkbox" id="closeWindow">
+        <!-- <label for="closeWindow" id="closeWindow-btn">X</label> -->
+        <div class="modal" id="modalElement">
+            <div class="modal-content">
+                <img src="./images/2022Ene-prom-img.png" alt="Marathon on Tiktok" id="modal-content-main-img">
+
+                <div class="off-container-main">
+                
+                    <h1>Oferta Única! Quedan solo:</h1>
+                    <h2 id="countdown"></h2>
+
+                    <div class="off-container">
+
+                        <div class="off-courses">
+                            <a href="./ep-course.html" target="_blank">
+                                <img src="./images/img-cursos-de-ingles.png" alt="epc logo">
+                                <p><strong>Curso de Inglés desde 0</strong><br>Programa de 12 meses</p>
+                            </a>
+
+                            <p>- Pago anual: <del><span style="color: rgb(136, 4, 4);">$299 USD</span></del> | <strong><span style="color: rgb(42, 226, 42);">Hoy: 194,99USD</span></strong></p>
+                            <p>- Ahorra: <strong>$104 USD</strong> (35% de Descuento)</p>
+
+                            <div class="cta-button-marathon">
+                
+                                <script type="text/javascript">
+                                    function importHotmart(){ 
+                                         var imported = document.createElement('script'); 
+                                         imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                                         document.head.appendChild(imported); 
+                                        var link = document.createElement('link'); 
+                                        // link.rel = 'stylesheet'; 
+                                        // link.type = 'text/css'; 
+                                        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                                        document.head.appendChild(link);	} 
+                                     importHotmart(); 
+                                 </script> 
+                                 <a onclick="return false;" href="https://pay.hotmart.com/V60177078A?checkoutMode=2&off=37t4vw17" class="hotmart-fb hotmart__button-checkout">Comprar ahora</a>
+                
+                            </div>
+
+                        </div>
+
+                        <div class="off-courses">
+
+                            <a href="./ipa-course.html" target="_blank">
+                                <img src="./images/img-cursos-de-ingles.png" alt="IPA img">
+                                <p><strong>Curso de Alfabeto Fonético</strong><br>I. P. A. - 3 Meses</p>
+                            </a>
+
+                            <p>- Un solo pago: <del><span style="color: rgb(136, 4, 4);">$99 USD</span></del> | <strong><span style="color: rgb(42, 226, 42);">Hoy: 65,99USD</span></strong></p>
+                            <p>- Ahorra: <strong>$34 USD</strong> (35% de Descuento)</p>
+
+                            <div class="cta-button-marathon">
+                
+                                <script type="text/javascript">
+                                    function importHotmart(){ 
+                                         var imported = document.createElement('script'); 
+                                         imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                                         document.head.appendChild(imported); 
+                                        var link = document.createElement('link'); 
+                                        // link.rel = 'stylesheet'; 
+                                        // link.type = 'text/css'; 
+                                        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                                        document.head.appendChild(link);	} 
+                                     importHotmart(); 
+                                 </script> 
+                                 <a onclick="return false;" href="https://pay.hotmart.com/U48959078C?checkoutMode=2&off=imw7itmp" class="hotmart-fb hotmart__button-checkout">Comprar ahora</a>
+                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            <button onclick="goToCourses()">Prefiero perder la promoción</button>
+            <script>
+                function goToCourses() {
+                    modalElement = document.getElementById("modalElement")
+                    closeWindowElement = document.getElementById("closeWindow-btn")
+
+                    modalElement.style.display = "none"
+                    closeWindowElement.style.display = "none"
+                    window.location="#"
+                }
+
+            </script>
+            </div>
+        </div>
     
     <header>        
         <div class="Logo">
