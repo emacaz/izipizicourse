@@ -55,44 +55,110 @@ body {
 }
 .modal-content {
     margin: auto;
-    padding: 0 20px;
+    padding: 0 5px;
 }
-.title1 {
+
+#countdown {
+    background: rgb(209,235,24);
+    background: linear-gradient(82deg, rgba(209,235,24,1) 31%, rgba(31,253,29,1) 100%, rgba(252,69,69,1) 100%);
+    color: #000;
+    text-align: center;
+    margin: 5px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.off-container-main {
+    padding: 10px 0;
+    background-color: #216694;
+    border-radius: 6px;
+}
+.off-container-main h1 {
     color: #fff;
-    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 5px auto;
 }
-.title2 {
-    color: #fff;
-    color: #00d86a;
-    font-size: 60px;
-    margin: 0;
+.off-container {
+    display: flex;
 }
-.title2-2 {
-    color: #fff;
-    font-size: 50px;
-    margin: 0;
+
+.off-courses {
+    margin: 3px 10px;
+    position: relative;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill,296px);
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px 5px;
+    border-radius: 5px;
 }
+.off-courses a {
+    height: 26px;
+    /* margin: 0 3px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #3498DB;
+    padding: .75rem 5px;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
+
+}
+.off-courses p {
+    color: white;
+    font-size: 14px;
+}
+.off-courses a:hover {
+    background-color: #3bacf7;
+}
+.off-courses a img {
+    height: 40px;
+    margin-right: 8px;
+    border-radius: .3rem;
+    /* filter: drop-shadow(2px 2px 28px black); */
+}
+
 .modal-content button {
+    font-weight: 600;
     border: none;
     width: 100%;
-    padding: 10px 10px;
-    margin: 10px 0;
-    background: #00d86a;
+    padding: 5px;
+    margin: 5px 0;
+    background: #d83200;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
-    color: #000;
-    font-size: 18px;
+    color: #fff;
+    font-size: 16px;
 }
 .modal-content button:hover {
-    background: #026934;
+    color: #000;
     cursor: pointer;
 }
 
-.modal-content img {
+#modal-content-main-img {
     display: block;
     margin: auto;
-    width: 70%;
+    /* width: 90%; */
+}
+
+.cta-button-marathon a {
+    padding: 5px 0;
+    height: unset;
+    display: block;
+    text-align: center;
+    background-color: #00d86a;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.cta-button-marathon a:hover {
+    background-color: #85e20b;
 }
 
 @keyframes closeWindow {
