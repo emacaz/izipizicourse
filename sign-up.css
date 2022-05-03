@@ -9,6 +9,7 @@
     --light-blue: #5ab3ee;
     --icon-blue: #82C5F1;
     --just-white: #f0f0f0;
+    --border-radius: 8px;
 }
 a{
     text-decoration: none;
@@ -18,10 +19,8 @@ header{
     display: none;
 }
 body{
+    height: 100vh;
     background-image: radial-gradient(circle at 62.28% -19.64%, #2779af 0, #2879af 50%, #135f92 100%);
-}
-main{
-    
 }
 .signup-section{
     display: flex;
@@ -34,7 +33,7 @@ main{
 }
 .logo-container{
     width: 260px;
-    margin-bottom: 40px
+    margin-bottom: 20px
 }
 .logo-container img{
     width: 100%;
@@ -42,11 +41,17 @@ main{
 .login-form{
     width: 80%;
 }
+.signup-title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--just-white);
+    text-shadow: 0px 0px 3px #000000;
+}
 .input-container{
     display: flex;
     border-bottom: 1px solid var(--light-blue);
     padding-bottom: 8px;
-    margin-bottom: 36px;
+    margin-bottom: 28px;
 }
 .input-login{
     width: 100%;
@@ -67,13 +72,20 @@ main{
 .login-button{
     justify-self: center;
     border: none;
-    margin-bottom: 80px;
-    width: 140px;
-    height: 40px;
-    border-radius: 16px;
+    padding: 12px 90px;
+    margin-bottom: 32px;
+    border-radius: var(--border-radius);
     box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.38);
     background-color: var(--just-white);
     font-size: 14px;
+    font-weight: bold;
+}
+.gotologin-container{
+    font-size: 14px;
+    color: var(--just-white);
+}
+.gotologin-container a{
+    text-decoration:underline;
     font-weight: bold;
 }
 @media (min-width: 500px) {
@@ -90,22 +102,29 @@ main{
         background-image: none;
         background-color: var(--main-blue);
     }
-   header{
-       display: block;
-   }
+    .signup-title{
+        display: block;
+        margin: 24px 0 40px 0;
+        font-size: 24px;
+        color: var(--just-white);
+        text-shadow: 0px 0px 3px #000000;
+    }
+    header{
+        display: block;
+    }
    header nav{
        display: flex;
        height: 56px;
        width: 100%;
        margin-bottom: 10px;
        background-color: var(--main-blue);
-        box-shadow: 0px 0px 10px 3px #1F5E87;
+       box-shadow: 0px 0px 10px 3px #1F5E87;
    }
    header nav div{
-       display: flex;
-       width: 100%;
-       align-items: center;
-   }
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
    .logo-container-header{
         height: 100%;
         margin-left: 36px;
@@ -128,7 +147,7 @@ main{
    }
    .header-menu-button{
         padding: 8px 16px;
-        border-radius: 16px;
+        border-radius: var(--border-radius);
         color: var(--just-white);
         font-weight: bold;
    }
