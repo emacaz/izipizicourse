@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>Sign up izipizicourse</title>
-        <link rel="stylesheet" href="./sign-up.css">
+        <link rel="stylesheet" href="./sign-up-v2.css">
         <link rel="icon" href="./images/epc-logo.ico" type="image/x-icon">
     </head>
 <body>
@@ -32,20 +32,38 @@
             </figure>
                 <h2 class="signup-title">¡Join now and become bilingual!</h2>
             <form action="" class="login-form">
-                <div class="input-container">
-                    <input type="text" class="input-login" placeholder="First name">
+                <div class="inputs-container">
+                    <div>
+                        <label for="signup-name-input">Name</label>
+                        <input type="text" class="input-login" id="signup-name-input">
+                    </div>
+                    <div>
+                        <label for="signup-lastname-input">Last name</label>
+                        <input type="text" class="input-login" id="signup-lastname-input">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <input type="text" class="input-login" placeholder="Last name">
+                <div class="inputs-container">
+                    <div>
+                        <label for="signup-email-input">Email</label>
+                        <input type="email" class="input-login" id="signup-email-input">
+                    </div>
+                    <div>
+                        <label for="signup-email-input">Country</label>
+                        <input type="email" class="input-login" id="signup-country-input">
+                    </div>
+                  
                 </div>
-                <div class="input-container">
-                    <input type="email" class="input-login" placeholder="Your email">
-                </div>
-                <div class="input-container">
-                    <input type="password" class="input-login" placeholder="Create a password">
-                </div>
-                <div class="input-container">
-                    <input type="password" class="input-login" placeholder="Repeat password">
+                
+            
+                <div class="inputs-container">
+                    <div>
+                        <label for="signup-password-input">Create password</label>
+                        <input type="password" class="input-login" id="signup-password-input">
+                    </div>
+                    <div>
+                        <label for="signup-repeatpassword-input">Repeat password</label>
+                        <input type="password" class="input-login" id="signup-repeatpassword-input">
+                    </div>
                 </div>
             </form>
             <button class="login-button">

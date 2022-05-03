@@ -8,6 +8,7 @@
     --main-blue: #2879af;
     --light-blue: #5ab3ee;
     --icon-blue: #82C5F1;
+    --dark-blue: #133852;
     --just-white: #f0f0f0;
     --border-radius: 8px;
 }
@@ -19,7 +20,7 @@ header{
     display: none;
 }
 body{
-    height: 100vh;
+  
     background-image: radial-gradient(circle at 62.28% -19.64%, #2779af 0, #2879af 50%, #135f92 100%);
 }
 .signup-section{
@@ -42,42 +43,40 @@ body{
     width: 80%;
 }
 .signup-title{
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
     color: var(--just-white);
-    text-shadow: 0px 0px 3px #000000;
+    text-shadow: 0px 0px 2px #000000;
 }
-.input-container{
-    display: flex;
-    border-bottom: 1px solid var(--light-blue);
-    padding-bottom: 8px;
-    margin-bottom: 28px;
+.login-form label{
+    color: var(--just-white);
+    font-size: 16px;
 }
 .input-login{
     width: 100%;
-    margin-left: 4px;
-    height: 20px;
-    border: none;
-    background-color: transparent;
-    font-size: 16px;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--icon-blue);
+    background-color: var(--dark-blue);
+    font-size: 18px;
     color: var(--just-white);
-}
-.input-login::placeholder{
-    color: white;
-    opacity: 0.3;
 }
 .input-login:focus{
     outline: none;
 }
 .login-button{
-    justify-self: center;
     border: none;
-    padding: 12px 90px;
-    margin-bottom: 32px;
+    padding: 12px 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.38);
     background-color: var(--just-white);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 .gotologin-container{
@@ -156,5 +155,15 @@ body{
    }
    .logo-container{
     display: none;
-}
+    }
+    .signup-section{
+        max-width: 900px;
+    }
+    .inputs-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+
+
 }
