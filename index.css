@@ -320,6 +320,17 @@ header label:hover {
     padding-top: 40px;
 }
 
+.iniciar-ahora-button a {
+    text-decoration: none;
+    color: black;
+    background-color: #00d86a;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
 .CTA-form {
     display: flex;
 }
@@ -382,12 +393,10 @@ header label:hover {
     width: 100%;
     display: grid;
     place-items: center;
-    position: absolute;
-    bottom: -31px;
+    position: relative;
+    margin: 2rem auto;
 }
-.background-image figure {
-    margin: 0 20px;
-}
+
 .background-image img {
     display: block;
     margin: auto;
@@ -1553,7 +1562,7 @@ header label:hover {
     }
 
     .transform-your-future {
-        padding-top: 20px;
+        padding-top: 24px;
     }
 
     .CTA-form input::placeholder {
