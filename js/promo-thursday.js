@@ -1,5 +1,5 @@
 // Here you put how much for discount
-const discount_percentage = 50
+const discount_percentage = 30
 
 const zero_english_year_price = 300
 const zero_english_month_price = 29
