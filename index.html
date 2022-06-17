@@ -10,102 +10,50 @@
 </head>
 
 <body>
-    <!-- <input type="checkbox" id="closeWindow">
+    
+    <input type="checkbox" id="closeWindow">
         
         <div class="modal" id="modalElement">
             <div class="modal-content">
 
                 <div class="off-container-main">
-                
-                    <h1>Jueves de PROMO!!!</h1>
-                    <h1><span style="color: white; font-size: 16px; text-align: center ">30% OFF:</span></h1>
-                    <h2 id="countdown"></h2>
 
-                    <div class="off-container">
-                        <div class="off-courses">
-                            <a href="./ep-course.html" target="_blank">
-                                <img src="./images/img-cursos-de-ingles.png" alt="epc logo">
-                                <p><strong>Curso de Inglés desde 0</strong><br>Programa de 12 meses</p>
-                            </a>
-                            <p>- Pago anual: <del><strong><span style="color: rgb(136, 4, 4);">$299 USD</span></strong></del> | <strong><span style="color: rgb(42, 226, 42);">Hoy: <span id="ze-today-price"></span></span></strong></p>
-                            <p>- Ahorra: <strong id="ze-you-save"></strong><span id="ze-discount-percentage"></span></p>
-                            <div class="cta-button-marathon">
-                                <script type="text/javascript">
-                                    function importHotmart(){ 
-                                         var imported = document.createElement('script'); 
-                                         imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
-                                         document.head.appendChild(imported); 
-                                        var link = document.createElement('link'); 
-                                        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-                                        document.head.appendChild(link);	} 
-                                     importHotmart(); 
-                                 </script> 
-                                 <a onclick="return false;" href="https://pay.hotmart.com/V60177078A?checkoutMode=2&off=q203py9m" class="hotmart-fb hotmart__button-checkout">Suscribirse ahora</a>
-                            </div>
-                        </div>
+                    <div class="background-image-iva">
+                        <img src="./images/diasiniva2.jpg" alt="" width="100%">
+                        <script type="text/javascript">
+                            function importHotmart(){ 
+                                    var imported = document.createElement('script'); 
+                                    imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                                    document.head.appendChild(imported); 
+                                var link = document.createElement('link'); 
+                                link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                                document.head.appendChild(link);	} 
+                                importHotmart(); 
+                        </script>
 
-                        <div class="off-courses">
-                            <a href="./ipa-course.html" target="_blank">
-                                <img src="./images/img-cursos-de-ingles.png" alt="IPA img">
-                                <p><strong>Curso Fonética</strong><br>I. P. A. - 3 Meses</p>
-                            </a>
-                            <p>- Un solo pago: <del><strong><span style="color: rgb(136, 4, 4);">$99 USD</span></strong></del> | <strong><span style="color: rgb(42, 226, 42);">Hoy: <span id="ipa-today-price"></span></span></strong></p>
-                            <p>- Ahorra: <strong id="ipa-you-save"></strong><span id="ipa-discount-percentage"></span></p>
-                            <div class="cta-button-marathon">
-                                <script type="text/javascript">
-                                    function importHotmart(){ 
-                                         var imported = document.createElement('script'); 
-                                         imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
-                                         document.head.appendChild(imported); 
-                                        var link = document.createElement('link'); 
-                                        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-                                        document.head.appendChild(link);	} 
-                                     importHotmart(); 
-                                 </script> 
-                                 <a onclick="return false;" href="https://pay.hotmart.com/U48959078C?checkoutMode=2&off=5cjhgv4c" class="hotmart-fb hotmart__button-checkout">Comprar ahora</a>
-                            </div>
-                        </div>
+                        <a id="buy-now-button" onclick="return false;" href="https://pay.hotmart.com/V60177078A?off=9tbtrrpu&checkoutMode=6" class="hotmart-fb hotmart__button-checkout">Comprar ahora</a>
+                        <a id="see-course-button" href="./ep-course.html" target="_blank" >Ver curso</a>
 
-                        <div class="off-courses">
-                            <a href="./greasy-course.html" target="_blank">
-                                <img src="./images/img-cursos-de-ingles.png" alt="IPA img">
-                                <p><strong>Grammar Course</strong><br>Advanced Grammar (PDF)</p>
-                            </a>
-                            <p>- Un solo pago: <del><strong><span style="color: rgb(136, 4, 4);">$59 USD</span></strong></del> | <strong><span style="color: rgb(42, 226, 42);">Hoy: <span id="gc-today-price"></span></span></strong></p>
-                            <p>- Ahorra: <strong id="gc-you-save"></strong><span id="gc-discount-percentage"></span></p>
-                            <div class="cta-button-marathon">
-                                <script type="text/javascript">
-                                    function importHotmart(){ 
-                                         var imported = document.createElement('script'); 
-                                         imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
-                                         document.head.appendChild(imported); 
-                                        var link = document.createElement('link'); 
-                                        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-                                        document.head.appendChild(link);	} 
-                                     importHotmart(); 
-                                 </script> 
-                                 <a onclick="return false;" href="https://pay.hotmart.com/M60239514V?checkoutMode=2&off=adqw3cnt" class="hotmart-fb hotmart__button-checkout">Comprar ahora</a>
-                            </div>
-                        </div>
-
+                        <!-- <h2 id="countdown"></h2> -->
                     </div>
+                    
                 </div>
 
-                
-            <button onclick="goToCourses()">Prefiero perder la promoción</button>
-            <script>
-                function goToCourses() {
-                    modalElement = document.getElementById("modalElement")
-                    closeWindowElement = document.getElementById("closeWindow-btn")
+                <button onclick="goToCourses()" style="padding: 10px 0">Cerrar</button>
+                <script>
+                    function goToCourses() {
+                        modalElement = document.getElementById("modalElement")
+                        closeWindowElement = document.getElementById("closeWindow-btn")
 
-                    modalElement.style.display = "none"
-                    closeWindowElement.style.display = "none"
-                    window.location="#"
-                }
+                        modalElement.style.display = "none"
+                        closeWindowElement.style.display = "none"
+                        window.location="#"
+                    }
 
-            </script>
+                </script>
+
             </div>
-        </div> -->
+        </div>
     
     <header>        
         <div class="Logo">
@@ -131,13 +79,102 @@
 
     </header>
 
+    <div class="Ads BlackNovember-Ads">
+        <style>
+            .Ads {
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+                background: rgb(235,231,72);
+                background: linear-gradient(90deg, rgba(235,231,72,1) 51%, rgba(236,23,120,1) 100%);
+            }
+
+            .Ads-wrapper {
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto 200px;
+                align-items: center;
+                color: #fff;
+            }
+            .Ads-wrapper img {
+                height: 50px;
+            }
+
+            .Ads-wrapper a {
+                margin: auto 5px;
+                padding: 6px 5px;
+                background-color: #00d86a;
+                color: #000;
+                text-decoration: none;
+                font-size: 100%;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+                font-size: 19px;
+            }
+            .Ads-wrapper a:hover {
+                background-color: #deee05;
+            }
+
+            .Ads-wrapper h3 {
+                font-size: 24px;
+                color: #000;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            .Ads-wrapper h2 {
+                margin: 0px 10px;
+                text-align: right;
+                color: #000;
+            }
+
+            @media (max-width: 768px) {
+
+                .Ads-wrapper {
+                    grid-template-columns: auto auto;
+                }
+
+                .Ads-wrapper h3 {
+                    font-size: 16px;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+
+                .Ads-wrapper h2 {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="u-wrapper Ads-wrapper">
+            <!-- <img src="./images/blacknovember.png" alt="BlackNovember Image"> -->
+            <h3>Día sin IVA de 19% ó 50%OFF -></h3>
+
+
+            <script type="text/javascript">
+                function importHotmart(){ 
+                     var imported = document.createElement('script'); 
+                     imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                     document.head.appendChild(imported); 
+                    var link = document.createElement('link'); 
+                    // link.rel = 'stylesheet'; 
+                    // link.type = 'text/css'; 
+                    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                    document.head.appendChild(link);	} 
+                 importHotmart(); 
+             </script> 
+             <a onclick="return false;" href="https://pay.hotmart.com/V60177078A?off=9tbtrrpu&checkoutMode=6" class="hotmart-fb hotmart__button-checkout">Adquirir</a>
+
+        </div>
+    </div>
+
     <div class="Hero">
         <div class="u-wrapper Hero-wrapper">
             <div class="Hero-content">
                 <div class="LeftContent">
                     <h1 class="Hero-title">Vuélvete bilingüe online y <span style="color: #fcfb1e;">transforma</span> tu futuro</h1>
                     <p class="Hero-description">El inglés te permite <strong>mejor trabajo</strong> y <strong>cargos directivos</strong> en todo el mundo</p>
-                    <p class="Hero-description"><strong>4 meses o menos</strong> alcanzas un nivel conversacional <u>por menos de 1 dólar al día</u></p>
+                    <p class="Hero-description"><strong>4 meses o menos</strong> alcanzas un nivel conversacional <u>por menos de 1 dólar al día</u>.</p>
                     
                     <p class="transform-your-future">Transforma tu futuro:</p>
                     <div class="iniciar-ahora-button">
@@ -233,16 +270,6 @@
                             </a>
                             <figure><img src="./images/hotmart-logo.png" alt="hotmart logo" height="39px"></figure>
                         </div>
-
-                        <div class="CTA-form-div">
-                            <h4>Inicia tu camino a volverte bilingüe:</h4>
-                            
-                            <form class="CTA-form dark-form" action="https://izipizicourse.club.hotmart.com/signup">
-                                <input type="email" name="email" placeholder="Correo electrónico" required>
-                                <button type="submit"><strong>Entra a easypeasy</strong></button>
-                            </form>
-                            
-                        </div>
                     </div>
                 </div>
                 <div class="laptop-phone-img">
@@ -274,21 +301,21 @@
                                 <div class="testimonial-person-details">
                                     <div class="testimonial-person-photo-div">
                                         <figure class="testimonial-person-photo">
-                                            <img src="./images/testimonials-p1.png" alt="Testimonio 1">
+                                            <img src="./images/testimonials-p6.png" alt="Testimonio 1">
                                         </figure>
                                     </div>
                                     <div class="testimonial-person-data">
                                         <div class="person-name">
-                                            <h3>Christopher Haanlijn</h3>
+                                            <h3>Aleida Cañón</h3>
                                         </div>
                                         <div class="testimonial-person-country">
-                                            <img src="./images/us-person-flag.png" alt="Country flag">
-                                            <p>The United States</p>
+                                            <img src="./images/es-person-flag.png" alt="Country flag">
+                                            <p>España</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial-person-comment">
-                                    <p>When I stumbled across Emanuel on TikTok, I had no idea how much he was going to change my life. I immediately contacted Emanuel and he quickly became the highlight of my learning experience. Our classes were personalized, fun, professional, and most of all, I learned a ton.</p>
+                                    <p>Siempre me gustó el idioma porque trabajé en un sitio donde habían extranjeros, luego viajé a USA y ahí vi la urgencia de aprender. Regresé a Colombia y empecé a buscar un sitio para estudiar, luego encontré a Emanuel que me ha parecido excelente profesor y he aprendido mucho. Estoy muy contenta con su programa y me encantaría seguir estudiando en izipizicourse.</p>
                                 </div>
                             </div>
 
@@ -384,21 +411,21 @@
                                 <div class="testimonial-person-details">
                                     <div class="testimonial-person-photo-div">
                                         <figure class="testimonial-person-photo">
-                                            <img src="./images/testimonials-p6.png" alt="Testimonio 1">
+                                            <img src="./images/testimonials-p1.png" alt="Testimonio 1">
                                         </figure>
                                     </div>
                                     <div class="testimonial-person-data">
                                         <div class="person-name">
-                                            <h3>Aleida Cañón</h3>
+                                            <h3>Christopher Haanlijn</h3>
                                         </div>
                                         <div class="testimonial-person-country">
-                                            <img src="./images/es-person-flag.png" alt="Country flag">
-                                            <p>España</p>
+                                            <img src="./images/us-person-flag.png" alt="Country flag">
+                                            <p>The United States</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="testimonial-person-comment">
-                                    <p>Siempre me gustó el idioma porque trabajé en un sitio donde habían extranjeros, luego viajé a USA y ahí vi la urgencia de aprender. Regresé a Colombia y empecé a buscar un sitio para estudiar, luego encontré a Emanuel que me ha parecido excelente profesor y he aprendido mucho. Estoy muy contenta con su programa y me encantaría seguir estudiando en izipizicourse.</p>
+                                    <p>When I stumbled across Emanuel on TikTok, I had no idea how much he was going to change my life. I immediately contacted Emanuel and he quickly became the highlight of my learning experience. Our classes were personalized, fun, professional, and most of all, I learned a ton.</p>
                                 </div>
                             </div>
 

@@ -71,7 +71,7 @@ body {
 
 .off-container-main {
     padding: 10px 0;
-    background-color: #216694;
+    background-color: #ebe748;
     border-radius: 6px;
 }
 .off-container-main h1 {
@@ -107,8 +107,39 @@ body {
     text-decoration: none;
     color: #000;
     box-shadow: 0 8px 19px 0 rgb(3 9 30 / 32%);
-
 }
+
+.background-image-iva {
+    position: relative;
+}
+
+.background-image-iva a {
+    font-size: 17px;
+    position: absolute;
+    left: 6px;
+    width: 120px;
+    text-align: center;
+    padding: 4px 9px;
+    border-radius: 4px;
+    color: #000;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 100%);
+}
+#buy-now-button {
+    bottom: 45px;
+    background-color: #4dc921;
+    text-decoration: none;
+}
+#buy-now-button:hover {
+    background-color: #2d7b10;
+}
+#see-course-button {
+    bottom: 5px;
+}
+#see-course-button:hover {
+    background-color: #959c0c;
+    
+}
+
 .off-courses p {
     color: white;
     font-size: 14px;
@@ -330,6 +361,7 @@ header label:hover {
     text-align: center;
     margin: 10px auto;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .iniciar-ahora-button a:hover {
@@ -1278,7 +1310,7 @@ header label:hover {
     .menu {
         position: absolute;
         margin: 52px -100%;
-        background-color: #2879af;
+        background-color: #185177;
         width: 100%;
         z-index: 1;
         top: 0px;

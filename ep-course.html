@@ -33,18 +33,19 @@
         </nav>
     </header>
 
-    <!-- <div class="Ads BlackNovember-Ads">
+    <div class="Ads BlackNovember-Ads">
         <style>
             .Ads {
                 position: relative;
                 -webkit-font-smoothing: antialiased;
-                background: black;
+                background: rgb(235,231,72);
+                background: linear-gradient(90deg, rgba(235,231,72,1) 51%, rgba(236,23,120,1) 100%);
             }
 
             .Ads-wrapper {
                 margin: auto;
                 display: grid;
-                grid-template-columns: 100px auto 200px;
+                grid-template-columns: auto 200px;
                 align-items: center;
                 color: #fff;
             }
@@ -54,7 +55,7 @@
 
             .Ads-wrapper a {
                 margin: auto 5px;
-                padding: 5px;
+                padding: 6px 5px;
                 background-color: #00d86a;
                 color: #000;
                 text-decoration: none;
@@ -62,6 +63,7 @@
                 border-radius: 8px;
                 text-align: center;
                 box-shadow: 3px 3px 3px rgb(0 0 0 / 45%);
+                font-size: 19px;
             }
             .Ads-wrapper a:hover {
                 background-color: #deee05;
@@ -69,7 +71,7 @@
 
             .Ads-wrapper h3 {
                 font-size: 24px;
-                color: #fff;
+                color: #000;
                 margin: 15px 0;
                 text-align: left;
             }
@@ -83,7 +85,7 @@
             @media (max-width: 768px) {
 
                 .Ads-wrapper {
-                    grid-template-columns: 100px auto auto;
+                    grid-template-columns: auto auto;
                 }
 
                 .Ads-wrapper h3 {
@@ -99,11 +101,26 @@
             }
         </style>
         <div class="u-wrapper Ads-wrapper">
-            <img src="./images/blacknovember.png" alt="BlackNovember Image">
-            <h3>Descuentos en Noviembre para planear tu 2022</h3>
-             <a href="./epc-planes.html"><strong>Empieza ahora</strong></a>
+            <!-- <img src="./images/blacknovember.png" alt="BlackNovember Image"> -->
+            <h3>Día sin IVA de 19% ó 50%OFF -></h3>
+
+
+            <script type="text/javascript">
+                function importHotmart(){ 
+                     var imported = document.createElement('script'); 
+                     imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+                     document.head.appendChild(imported); 
+                    var link = document.createElement('link'); 
+                    // link.rel = 'stylesheet'; 
+                    // link.type = 'text/css'; 
+                    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+                    document.head.appendChild(link);	} 
+                 importHotmart(); 
+             </script> 
+             <a onclick="return false;" href="https://pay.hotmart.com/V60177078A?off=9tbtrrpu&checkoutMode=6" class="hotmart-fb hotmart__button-checkout">Adquirir</a>
+
         </div>
-    </div> -->
+    </div>
 
     <div class="Hero">
         <div class="u-wrapper Hero-wrapper">
