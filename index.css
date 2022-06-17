@@ -295,7 +295,7 @@ header label:hover {
 
 .Hero-content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .LeftContent {
@@ -325,10 +325,11 @@ header label:hover {
     color: black;
     background-color: #00d86a;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px;
     display: block;
     text-align: center;
     margin: 10px auto;
+    font-size: 18px;
 }
 
 .iniciar-ahora-button a:hover {
@@ -399,18 +400,18 @@ header label:hover {
     place-items: center;
     position: relative;
     margin: 2rem auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 565px;
 
-    justify-content: flex-end;
+
+    /* justify-content: flex-end; */
 }
 
-/* .background-image figure {
-    margin-right: 6rem;
-} */
 
 .background-image img {
     margin: auto;
-    /* width: 100%; */
+    width: 100%;
     height: auto;
 }
 /* HERO */
@@ -501,8 +502,8 @@ header label:hover {
     position: relative;
     display: grid;
     grid-gap: 1.2rem;
-    grid-template-columns: repeat(auto-fill,276px);
-    grid-template-rows: repeat(auto-fill,86px);
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-template-rows: repeat(auto-fill,95px);
     -webkit-box-pack: center;
     justify-content: center;
 }
@@ -1198,6 +1199,7 @@ header label:hover {
     }
     
     .background-image {
+        display: flex;
         justify-content: center;
     }
     .background-image img {
