@@ -351,6 +351,9 @@ header label:hover {
 .hero-img img {
     width: 100%;
 }
+.hero-img h1 {
+    display: none;
+}
 
 
 .LeftContent h1 {
@@ -1332,9 +1335,17 @@ header label:hover {
         padding-top: unset;
     }
 
-    .LeftContent h1 span:first-child {
+    .LeftContent h1 {
         display: none;
     }
+    .hero-img h1 {
+        display: block;
+        margin-top: 0;
+    }
+
+    /* .LeftContent h1 span:first-child {
+        display: none;
+    } */
 
     .hero-img {
         padding: 20px 100px;
