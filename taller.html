@@ -21,7 +21,7 @@
         <meta property="og:image" content="https://izipizicourse.com/images/og-image.jpg" />
         <meta property="og:site_name" content="https://izipizicourse.com/" />
 
-        <title>izipizicourse: Taller</title>
+        <title>izipizicourse: Workshop</title>
         <link rel="stylesheet" href="./taller.css">
         <link rel="icon" href="./images/epc-logo.ico" type="image/x-icon">
     </head>
@@ -154,7 +154,7 @@
                 <div class="course-image-name">
                     <figure><img src="./images/ipa-taller-image.png" alt="Course image"></figure>
                     <div class="course-title">
-                        <h1 id="course-name">Taller de Pronunciación y Fonética</h1>
+                        <h1 id="course-name">Workshop de Pronunciación y Fonética</h1>
                         <h3>Tipo: En Vivo (Vía Zoom)</h3>
                         <p>Duración: 4 Horas (descansos incluídos)</p>
                         <p>Fecha: 4 de Marzo. Hora: 5pm a 9pm (Hora Colombia 🇨🇴)</p>
@@ -164,7 +164,7 @@
                     </div>
                 </div>
                 <div class="course-description">
-                    <p>Taller práctico de Pronunciación y Fonética con el Alfabeto Fonético Internacional. Aprenderás y practicarás las vocales, consonantes y diptongos del Idioma Inglés.</p>
+                    <p>Workshop práctico de Pronunciación y Fonética con el Alfabeto Fonético Internacional. En este Workshop dominarás el Alfabeto Fonético y más nunca te confundirás al pronunciar en Inglés.</p>
                 </div>
             </div>
             
@@ -183,7 +183,7 @@
         <div class="u-wrapper Content-wrapper">
 
             <div class="content-title">
-                <h2>Contenido del Taller</h2>
+                <h2>Contenido del Workshop</h2>
             </div>
             <div class="content-advantages-container">
                 <div class="content-container">
@@ -308,19 +308,52 @@
 
             <div class="cta-button">
 
-                <script type="text/javascript">
-                    function importHotmart(){ 
-                         var imported = document.createElement('script'); 
-                         imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
-                         document.head.appendChild(imported); 
-                        var link = document.createElement('link'); 
-                        link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-                        document.head.appendChild(link);	} 
-                     importHotmart(); 
-                </script> 
-                <!-- <h2 id="countdown2" style="color: rgb(255 240 4); margin: 10px auto; width: 190px; text-align: center; padding: 8px; border: 1px solid black; border-radius: 4px; display: block;"></h2> -->
-                <!-- <a onclick="return false;" href="https://pay.hotmart.com/U48959078C?checkoutMode=2&off=imw7itmp" class="hotmart-fb hotmart__button-checkout">Separar cupo $12</a> -->
-                <a href="https://www.paypal.com/paypalme/emacaz">Separar cupo $13</a>
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                      <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                <script src="https://www.paypal.com/sdk/js?client-id=AXMIt5JQm5VPJ88qC5CyttmxH8KbFmZ9r9KK5TB5aO3GVtS947m8hTVZ3qKY3Bh3vscs-LFXLaXevIde&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                <script>
+                  function initPayPalButton() {
+                    paypal.Buttons({
+                      style: {
+                        shape: 'rect',
+                        color: 'gold',
+                        layout: 'vertical',
+                        label: 'paypal',
+                        
+                      },
+              
+                      createOrder: function(data, actions) {
+                        return actions.order.create({
+                          purchase_units: [{"description":"Workshop de Pronunciación y Fonética","amount":{"currency_code":"USD","value":13}}]
+                        });
+                      },
+              
+                      onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(orderData) {
+                          
+                          // Full available details
+                          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              
+                          // Show a success message within this page, e.g.
+                          const element = document.getElementById('paypal-button-container');
+                          element.innerHTML = '';
+                          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+              
+                          // Or go to another URL:  actions.redirect('thank_you.html');
+                          
+                        });
+                      },
+              
+                      onError: function(err) {
+                        console.log(err);
+                      }
+                    }).render('#paypal-button-container');
+                  }
+                  initPayPalButton();
+                </script>
 
             </div>
         </div>
