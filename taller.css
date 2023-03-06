@@ -434,7 +434,10 @@ header label:hover {
 .CTA p {
     text-align: center;
     margin-top: 10px;
-    font-size: 14px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #94eb9e;
 }
 /* CTA */
 
