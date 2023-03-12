@@ -154,11 +154,11 @@
                 <div class="course-image-name">
                     <figure><img src="./images/ipa-taller-image.png" alt="Course image"></figure>
                     <div class="course-title">
-                        <h1 id="course-name">Workshop de Fluidez y "Linkeo" de palabras, para todos los niveles.</h1>
+                        <h1 id="course-name">Taller Conversacional de Fluidez y "Linkeo" de palabras cada sábado; para todos los niveles.</h1>
                         <h3>Tipo: En Vivo (Vía Zoom)</h3>
-                        <p>Duración: 4 Horas (descansos incluídos)</p>
+                        <p>Duración: 4 Horas (4 descansos incluídos)</p>
                         <p style="font-size: 22px; color: #94eb9e; font-weight: 600;">CUPO LIMITADO!</p> <br>
-                        <p>Fecha: 11 de Marzo. Horas de inicio:</p><br>
+                        <p>Fechas: Todos los sábados. Horas de inicio:</p><br>
                         <p>Los Ángeles 🇺🇸 2pm</p>
                         <p>Honduras 🇨🇴 4pm</p>
                         <p>Colombia 🇨🇴 5pm</p>
@@ -348,14 +348,15 @@
 
             <div class="cta-button">
                 <p style="font-size: 22px; color: #94eb9e; font-weight: 600;">CUPO LIMITADO!</p>
-                <p>Separa tu cupo: $14 Dólares</p>
+                <p>Separa tu cupo: Hoy $9 USD. El sábado $14</p>
 
+                <!-- paypal btn code -->
                 <div id="smart-button-container">
                     <div style="text-align: center;">
                       <div id="paypal-button-container"></div>
                     </div>
                   </div>
-                <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                <script src="https://www.paypal.com/sdk/js?client-id=AXMIt5JQm5VPJ88qC5CyttmxH8KbFmZ9r9KK5TB5aO3GVtS947m8hTVZ3qKY3Bh3vscs-LFXLaXevIde&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
                 <script>
                   function initPayPalButton() {
                     paypal.Buttons({
@@ -369,7 +370,7 @@
               
                       createOrder: function(data, actions) {
                         return actions.order.create({
-                          purchase_units: [{"description":"Workshop semanal. Duración 4 horas.","amount":{"currency_code":"USD","value":14}}]
+                          purchase_units: [{"description":"Taller Conversacional x 4horas","amount":{"currency_code":"USD","value":9}}]
                         });
                       },
               
@@ -396,6 +397,7 @@
                   }
                   initPayPalButton();
                 </script>
+                <!-- paypal btn code END-->
 
                 <!-- <h1 style="text-align: center; color: rgb(180, 19, 19);">YA NO PUEDES ACCEDER A ESTE TALLER! 😕</h1> -->
 
