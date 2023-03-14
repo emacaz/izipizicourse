@@ -140,6 +140,7 @@ header label:hover {
 }
 .course-description p {
     font-size: 20px;
+    text-align: justify;
 }
 
 .course-main-image {
@@ -276,7 +277,7 @@ header label:hover {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
@@ -739,7 +740,6 @@ header label:hover {
     .course-description {
         text-align: center;
     }
-
 
     .course-main-image {
         margin-top: 3rem;
