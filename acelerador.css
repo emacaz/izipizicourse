@@ -249,7 +249,7 @@ header label:hover {
     text-align: center;
 }
 .about-course-img img {
-    width: 70%;
+    width: 90%;
 }
 
 .pc-phone-view {
@@ -278,6 +278,7 @@ header label:hover {
     display: flex;
     align-items: center;
     padding: 1rem;
+    color: white;
 }
 
 
@@ -297,7 +298,7 @@ header label:hover {
 }
 
 .PriceCard-recommended {
-    margin: 0 3rem;
+    margin: 0 1rem;
     background: #3498db;
 }
 
@@ -348,16 +349,18 @@ header label:hover {
     gap: 5pt;
 }
 .PriceCard-benefits-list li {
-    font-size: 15px;
+    font-size: 100%;
     color: #eff3f8;
     font-weight: 400;
     letter-spacing: .25px;
     line-height: 1.4;
     margin-right: .25rem;
+    margin-bottom: 5px;
 }
 .PriceCard-benefits-list li::before {
     content: url("./images/checked-symbol.png");
     vertical-align: middle;
+    padding-right: 5px;
 }
 .PriceCard-button {
     margin-top: 5px;
@@ -750,6 +753,10 @@ header label:hover {
 
 
     /* CONTENT */
+    .Content-wrapper {
+        padding: 20px;
+    }
+
     .content-advantages-container {
         display: block;
     }
@@ -933,9 +940,6 @@ header label:hover {
     /* CONTENT */
     .Content {
         margin: 1rem 1rem 2rem 1rem;
-    }
-    .Content-wrapper {
-        padding: 20px;
     }
 
     .content-title h2 {
