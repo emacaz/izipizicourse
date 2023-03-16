@@ -297,6 +297,10 @@ header label:hover {
     width: 100%;
 }
 
+.PriceCard a {
+    color: #4FCE5D;
+}
+
 .PriceCard-recommended {
     margin: 0 1rem;
     background: #3498db;
@@ -322,6 +326,7 @@ header label:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 .PriceCard-pricing img {
     height: 1.55rem;
@@ -739,6 +744,7 @@ header label:hover {
     /* HEADER */
     .Hero-wrapper {
         display: block;
+        padding: 20px;
     }
 
 
@@ -924,9 +930,6 @@ header label:hover {
     /* HERO */
     .Hero {
         margin: 1rem;
-    }
-    .Hero-wrapper {
-        padding: 20px;
     }
 
     .course-description-container {

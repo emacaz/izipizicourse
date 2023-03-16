@@ -168,7 +168,7 @@
                     <p>El <u>Acelerador en español</u> es un programa <b>único en el mundo</b> e intensivo que hace que el estudiante hable realmente Inglés de forma extraordinaria en un tiempo mucho menor al que normalmente le tomaría llegar, sin necesitar de otros programas. Consta de <u>contenido teórico avanzado</u>, <u>secretos de aprendizaje</u> y <u>del Inglés</u>, <u>tips</u>, <u>retos</u> y junto con <u>la experiencia de Emanuel Castillo</u> las personas aceleran en tiempo récord su nivel de Inglés. Esta segunda versión tendrá una <strong>duración de 6 meses</strong> y contaremos con 3 grupos, contenido exclusivo y CUPO LIMITADO:</p>
                 </div><br>
                 <div class="course-description">
-                    <p>Conoce la primera versión <a href="https://www.youtube.com/playlist?list=PLkeLMOvUJo9yHj4WW5R_tPlGoTAQc3a5v" target="_blank">aquí</a></p>
+                    <p>Conoce la primera versión <a href="https://www.youtube.com/playlist?list=PLkeLMOvUJo9yHj4WW5R_tPlGoTAQc3a5v" target="_blank" style="color: #4FCE5D;">aquí</a></p>
                 </div>
             </div>
             
@@ -362,7 +362,6 @@
                         </ul>
                     </div>
                     <!-- <p><strong>*Usa el cupón: BLACKNOVEMBER40</strong></p> -->
-
                     <div class="PriceCard-pricing">
                         <img src="./images/us-person-flag.png" alt="Currency type">
                         <p class="PriceCard-price">$2200</p>
@@ -370,8 +369,114 @@
 
                 </div>
             </div>
-            <div class="contact-us">
-                <p style="font-size: 24px; color: white; text-align:center;">Comúnicate con nosotos <a href="https://wa.me/573224504439" target="_blank">vía WhatsApp</a> para ayudarte con el pago.</p>
+            <div class="contact-us" style="padding: 0 10px;">
+
+                <!-- paypal-button -->
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                      <div style="margin-bottom: 1.25rem;">
+                        <p>Acelerador de izipiziCourse</p>
+                        <select id="item-options" style="font-size: 20px; border-radius: 0px 0px 10px 10px; padding: 4px 9px;"><option value="Grupo 0 - Newbies" price="550">Grupo 0 - Newbies - 550 USD</option><option value="Grupo A1 - A2" price="1100">Grupo A1 - A2 - 1100 USD</option><option value="Group B1 - B2" price="2200">Group B1 - B2 - 2200 USD</option></select>
+                        <select style="visibility: hidden" id="quantitySelect"></select>
+                      </div>
+                    <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                  <script src="https://www.paypal.com/sdk/js?client-id=AeKFU7wMTdwLFFCoE0NyamuYUY_df_V6Lpy4vEk31HQh6pEI8w5ER58uqT1if0gUOQcdnoLlXE19JkRg&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                  <script>
+                    function initPayPalButton() {
+                      var shipping = 0;
+                      var itemOptions = document.querySelector("#smart-button-container #item-options");
+                  var quantity = parseInt();
+                  var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+                  if (!isNaN(quantity)) {
+                    quantitySelect.style.visibility = "visible";
+                  }
+                  var orderDescription = 'Acelerador de izipiziCourse';
+                  if(orderDescription === '') {
+                    orderDescription = 'Item';
+                  }
+                  paypal.Buttons({
+                    style: {
+                      shape: 'rect',
+                      color: 'gold',
+                      layout: 'vertical',
+                      label: 'paypal',
+                      
+                    },
+                    createOrder: function(data, actions) {
+                      var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+                      var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                      var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+                      if(quantitySelect.options.length > 0) {
+                        quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+                      } else {
+                        quantity = 1;
+                      }
+              
+                      tax *= quantity;
+                      tax = Math.round(tax * 100) / 100;
+                      var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+                      priceTotal = Math.round(priceTotal * 100) / 100;
+                      var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+              
+                      return actions.order.create({
+                        purchase_units: [{
+                          description: orderDescription,
+                          amount: {
+                            currency_code: 'USD',
+                            value: priceTotal,
+                            breakdown: {
+                              item_total: {
+                                currency_code: 'USD',
+                                value: itemTotalValue,
+                              },
+                              shipping: {
+                                currency_code: 'USD',
+                                value: shipping,
+                              },
+                              tax_total: {
+                                currency_code: 'USD',
+                                value: tax,
+                              }
+                            }
+                          },
+                          items: [{
+                            name: selectedItemDescription,
+                            unit_amount: {
+                              currency_code: 'USD',
+                              value: selectedItemPrice,
+                            },
+                            quantity: quantity
+                          }]
+                        }]
+                      });
+                    },
+                    onApprove: function(data, actions) {
+                      return actions.order.capture().then(function(orderData) {
+                        
+                        // Full available details
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              
+                        // Show a success message within this page, e.g.
+                        const element = document.getElementById('paypal-button-container');
+                        element.innerHTML = '';
+                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+              
+                        // Or go to another URL:  actions.redirect('thank_you.html');
+              
+                      });
+                    },
+                    onError: function(err) {
+                      console.log(err);
+                    },
+                  }).render('#paypal-button-container');
+                }
+                initPayPalButton();
+                  </script>
+                <!-- paypal-button end -->
+
+                <p style="font-size: 20px; color: white; text-align:center; margin-top: 1rem;">Comúnicate con nosotos <a href="https://wa.me/573224504439" style="color:#4FCE5D;" target="_blank">vía WhatsApp</a> una vez hayas realizado el pago.</p>
             </div><br>
         </div>
     </div>
