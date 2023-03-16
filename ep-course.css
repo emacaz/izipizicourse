@@ -339,6 +339,9 @@ header label:hover {
     font-weight: 400;
 }
 
+.PriceCard-benefits {
+    padding-left: 12px;
+}
 
 .PriceCard-benefits-list {
     text-decoration: none;
@@ -348,16 +351,18 @@ header label:hover {
     gap: 5pt;
 }
 .PriceCard-benefits-list li {
-    font-size: 15px;
+    font-size: 100%;
     color: #eff3f8;
     font-weight: 400;
     letter-spacing: .25px;
     line-height: 1.4;
-    margin-right: .25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 5px;
 }
 .PriceCard-benefits-list li::before {
     content: url("./images/checked-symbol.png");
-    vertical-align: middle;
+    position: absolute;
+    left: 10px;
 }
 .PriceCard-button {
     margin-top: 5px;
@@ -693,6 +698,10 @@ header label:hover {
         padding: 0;
     }
 
+    .Content-wrapper {
+        padding: 0 15px;
+    }
+
     /* HEADER */
     header {
         position: relative;
@@ -739,6 +748,7 @@ header label:hover {
 
     .course-description {
         text-align: center;
+        padding: 0 15px;
     }
 
     .course-main-image {
@@ -774,6 +784,10 @@ header label:hover {
     .adv-div h4 {
         text-align: center;
     }
+
+    .advantages-description {
+        padding: 0 15px;
+    }
     
     /* CONTENT */
 
@@ -781,6 +795,9 @@ header label:hover {
 
 
     /* STUDY PLANS */
+    .PriceCard {
+        min-height: 450px;
+    }
 
     /* PLANES */
     .PriceCard-container {
