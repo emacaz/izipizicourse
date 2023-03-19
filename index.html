@@ -27,14 +27,14 @@
 
 <body>
     
-    <!-- <input type="checkbox" id="closeWindow"> 
+    <input type="checkbox" id="closeWindow"> 
     <div class="modal" id="modalElement">
         <div class="modal-content">
 
             <div class="off-container-main">
 
                 <div class="background-image-iva">
-                    <img src="./images/promo-christmas2022.jpg" alt="" width="100%">
+                    <img src="./images/promo-19-24-march.jpg" alt="" width="100%">
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
                 }
             </script>
         </div>
-    </div> -->
+    </div>
     
     <header>        
         <div class="Logo">
@@ -133,7 +133,7 @@
                 text-align: left;
             }
 
-            #countdown {
+            #acelerador_countdown {
                 margin: 0px 10px;
                 text-align: center;
                 color: #000;
@@ -175,7 +175,7 @@
             <img src="./images/ac-image.jpg" alt="BlackNovember Image" style="border-radius: 50%;">
             <h3>Acelerador de Inglés 🚀</h3>
             <a href="./acelerador.html" onclick="closeWindow()"><strong>Ver más</strong></a>
-            <h2 id="countdown" style="color: rgb(255, 255, 255); font-size: 22px;"></h2>
+            <h2 id="acelerador_countdown" style="color: rgb(255, 255, 255); font-size: 22px;"></h2>
         </div>
     </div>
 
@@ -203,12 +203,13 @@
                             <div class="calification">
                                 <p>⭐️⭐️⭐️⭐️⭐️ <span>5.0 </span>(547)</p>
                             </div><br>
+                            <p id="course_countdown1" style="color: #f00; font-size: 20px; font-weight: 500;"></p>
 
                             <div class="prices">
                                 <p class="plans">Planes: Mensual | Anual | De por vida</p>
-                                <p class="prices-numbers">Mes: $39</p>
-                                <p class="prices-numbers">Año: $399</p>
-                                <p class="prices-numbers">De por vida: $999</p>
+                                <p class="prices-numbers">Mes: <del>$39</del> $29</p>
+                                <p class="prices-numbers">Año: <del>$399</del> $299</p>
+                                <p class="prices-numbers">De por vida: <del>$999</del> $749</p>
                             </div>
                         </a>
 
@@ -223,9 +224,11 @@
                             <div class="calification">
                                 <p>⭐️⭐️⭐️⭐️⭐️ <span>4.8 </span>(367)</p>
                             </div><br>
+                            <p id="course_countdown2" style="color: #f00; font-size: 20px; font-weight: 500;"></p>
+
                             <div class="prices">
                                 <p class="plans">Único pago</p>
-                                <p class="prices-numbers">Ahora: $99</p>
+                                <p class="prices-numbers">Ahora: <del>$99</del> $74</p>
                             </div>
                         </a>
 
@@ -240,10 +243,11 @@
                             <div class="calification">
                                 <p>⭐️⭐️⭐️⭐️⭐️ <span>4.5 </span>(180)</p>
                             </div><br>
+                            <p id="course_countdown3" style="color: #f00; font-size: 20px; font-weight: 500;"></p>
 
                             <div class="prices">
                                 <p class="plans">Único pago</p>
-                                <p class="prices-numbers">Ahora: $59</p>
+                                <p class="prices-numbers">Ahora: <del>$59</del> $44</p>
                             </div>
                         </a>
 
@@ -805,7 +809,6 @@
     </div>
     
     <script src="./index.js"></script>
-    <script src="./countdown-accelerator.js"></script>
-    <script src="/js/promo-thursday.js"></script>
+    <script src="/timers.js"></script>
 </body>
 </html>

@@ -383,7 +383,7 @@ header label:hover {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill,250px);
-    grid-template-rows: repeat(auto-fill,250px);
+    grid-template-rows: repeat(auto-fill,270px);
     -webkit-box-pack: center;
     justify-content: center;
 }
