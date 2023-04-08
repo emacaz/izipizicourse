@@ -350,7 +350,7 @@
                 <p>Separa tu cupo: $14 USD</p>
 
                 <!-- paypal btn code -->
-                <div id="smart-button-container">
+                <!-- <div id="smart-button-container">
                     <div style="text-align: center;">
                       <div id="paypal-button-container"></div>
                     </div>
@@ -376,16 +376,11 @@
                       onApprove: function(data, actions) {
                         return actions.order.capture().then(function(orderData) {
                           
-                          // Full available details
                           console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
               
-                          // Show a success message within this page, e.g.
                           const element = document.getElementById('paypal-button-container');
                           element.innerHTML = '';
-                          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-              
-                          // Or go to another URL:  actions.redirect('thank_you.html');
-                          
+                          element.innerHTML = '<h3>Thank you for your payment!</h3>';                          
                         });
                       },
               
@@ -395,10 +390,10 @@
                     }).render('#paypal-button-container');
                   }
                   initPayPalButton();
-                </script>
+                </script> -->
                 <!-- paypal btn code END-->
 
-                <!-- <h1 style="text-align: center; color: rgb(180, 19, 19);">YA NO PUEDES ACCEDER A ESTE TALLER! 😕</h1> -->
+                <h1 style="text-align: center; color: rgb(180, 19, 19);">YA NO PUEDES ACCEDER A ESTE TALLER! 😕</h1>
 
             </div>
         </div>
