@@ -347,8 +347,7 @@
 
             <div class="cta-button">
                 <p style="font-size: 22px; color: #94eb9e; font-weight: 600;">CUPO LIMITADO!</p>
-                <p>Separa tu cupo: Sólo por hoy: $8 USD. Precio normal <del>$14 USD</del></p>
-                <p>50% DE DESCUENTO SÓLO HOY</p>
+                <p>Separa tu cupo: $14 dólares</p>
 
                 <!-- paypal btn code -->
                 <div id="smart-button-container">
@@ -370,7 +369,7 @@
               
                       createOrder: function(data, actions) {
                         return actions.order.create({
-                          purchase_units: [{"description":"Workshop de 4 horas","amount":{"currency_code":"USD","value":8}}]
+                          purchase_units: [{"description":"Workshop de 4 horas","amount":{"currency_code":"USD","value":14}}]
                         });
                       },
               
