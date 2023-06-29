@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2879af;
+    height: 100vh;
+}
+
+.u-wrapper {
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin: 0 auto!important;
+    padding: 0 1em;
+    position: relative;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    background: #3498db;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 130px auto;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
+    font-size: 14px;
+    z-index: 1;
+}
+
+.Logo {
+    margin: 0 5px;
+}
+
+.Logo a{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Logo figure {
+    margin: 0;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    justify-self: end;
+    padding-right: 10px;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.menu ul {
+    margin: 0 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .4s;
+}
+.menu li {
+    border-radius: 8px;
+}
+.menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.LoginButton a {
+    text-decoration: none;
+    color: #000;
+    background-color: #00d86a;
+    border-radius: 8px;
+    padding: 5px 5px;
+}
+
+.LoginButton a:hover {
+    background-color: #fcfb1e;
+    transition: .4s;
+}
+/* HEADER */
+
+
+
+
+/* HERO-SECTION */
+.hero-section {
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section button {
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: #00d86a;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hero-section button:hover {
+    background-color: #039148;
+    transition: .2s;
+}
+/* HERO-SECTION END */
+
+
+
+
+
+/* TEST-SECTION */
+#test-section {
+    display: none;
+}
+#test-container {
+    text-align: center;
+}
+#test-container h2 {
+    color: #ffffff;
+}
+#test-container button {
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #00d86a;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 15px;
+}
+
+#test-container button:hover {
+    background-color: #3498db;
+}
+/* TEST-SECTION END */
+
+
+
+
+@media (max-width: 768px){
+    /* HEADER */
+    header {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    .hero-img {
+        padding: 20px 30px;
+    }
+
+    .courses-modules {
+        grid-gap: 20px;
+    }
+
+    .menu {
+        position: absolute;
+        margin: 52px -100%;
+        background-color: #185177;
+        width: 100%;
+        z-index: 1;
+        top: 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu li {
+        border-top: 1px solid #000;
+        border-radius: 0;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 52px 0;
+    }
+    /* HEADER */
+}
