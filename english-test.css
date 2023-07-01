@@ -172,14 +172,13 @@ header label:hover {
 }
 
 #question-container p {
-    font-size: 24px;
-    color: #00d86a;
+    font-size: 20px;
     font-weight: 700;
     border: 1px solid black;
-    width: 200px;
+    width: 300px;
     padding: 10px;
     margin: 17px auto;
-    border-radius: 8px;
+    border-radius: 2px;
 }
 /* TEST-SECTION END */
 
