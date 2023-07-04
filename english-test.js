@@ -1,27 +1,3 @@
-var userAnswers = [];
-var startTestButton = document.getElementById('start-test-btn');
-var timerElement = document.getElementById('timer');
-var timeLeft = 20 * 60; // 20 minutos en segundos
-var timerId;
-
-startTestButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.getElementById('test-section').style.display = "block";
-    document.getElementById('hero-section').style.display = "none";
-    startTimer();
-    loadQuestion();
-})
-
-// Objeto para almacenar los resultados por nivel
-var resultsByLevel = {
-    'A1': { correct: 0, total: 0 },
-    'A2': { correct: 0, total: 0 },
-    'B1': { correct: 0, total: 0 },
-    'B2': { correct: 0, total: 0 },
-    'C1': { correct: 0, total: 0 },
-    'C2': { correct: 0, total: 0 }
-  };  
-
 // Preguntas y respuestas del test
 var questions = [
     // Nivel A1
@@ -936,6 +912,30 @@ var questions = [
         ]
     },
 ];
+
+var userAnswers = [];
+var startTestButton = document.getElementById('start-test-btn');
+var timerElement = document.getElementById('timer');
+var timeLeft = 5 * 60; // 20 minutos en segundos
+var timerId;
+
+startTestButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('test-section').style.display = "block";
+    document.getElementById('hero-section').style.display = "none";
+    startTimer();
+    loadQuestion();
+})
+
+// Objeto para almacenar los resultados por nivel
+var resultsByLevel = {
+    'A1': { correct: 0, total: 0 },
+    'A2': { correct: 0, total: 0 },
+    'B1': { correct: 0, total: 0 },
+    'B2': { correct: 0, total: 0 },
+    'C1': { correct: 0, total: 0 },
+    'C2': { correct: 0, total: 0 }
+};  
   
   
 var currentQuestionIndex = 0;
@@ -970,7 +970,14 @@ function handleAnswerClick(event) {
     var selectedAnswer = event.target;
     var currentQuestion = questions[currentQuestionIndex];
 
-    if (selectedAnswer.textContent === currentQuestion.answers.find(a => a.correct).text) {
+    var userAnswer = {
+        question: currentQuestion.question,
+        answer: selectedAnswer.textContent,
+        correct: selectedAnswer.textContent === currentQuestion.answers.find(a => a.correct).text
+    };
+    userAnswers.push(userAnswer);
+
+    if (userAnswer.correct) {
         score++;
     }
 
@@ -982,6 +989,7 @@ function handleAnswerClick(event) {
         showResult();
     }
 }
+
 
 // Restablecer el temporizador
 function resetTimer() {
@@ -1018,44 +1026,45 @@ function showResult() {
     // Calcular el porcentaje de respuestas correctas por nivel
     var levelScores = {};
     for (var i = 0; i < questions.length; i++) {
-      var level = questions[i].level;
-      if (!levelScores[level]) {
-        levelScores[level] = {
-          total: 0,
-          correct: 0
-        };
-      }
-      levelScores[level].total++;
-      if (userAnswers[i] && userAnswers[i].correct) {
-        levelScores[level].correct++;
-      }
+        var level = questions[i].level;
+        if (!levelScores[level]) {
+            levelScores[level] = {
+                total: 0,
+                correct: 0
+            };
+        }
+        levelScores[level].total++;
+        
+        if (userAnswers[i] && userAnswers[i].correct) {
+            levelScores[level].correct++;
+        }
     }
   
     // Mostrar el porcentaje de respuestas correctas por nivel
-    // var levelPercentageElement = document.createElement('h2');
-    // levelPercentageElement.innerText = 'Porcentaje de respuestas correctas por nivel:';
-    // questionContainer.appendChild(levelPercentageElement);
+    var levelPercentageElement = document.createElement('h2');
+    levelPercentageElement.innerText = 'Porcentaje de respuestas correctas por nivel:';
+    questionContainer.appendChild(levelPercentageElement);
   
-    // var passedLevels = []; // Almacenar los niveles aprobados
+    var passedLevels = []; // Almacenar los niveles aprobados
   
-    // for (var level in levelScores) {
-    //   var levelScore = levelScores[level];
-    //   var levelPercentage = (levelScore.correct / levelScore.total) * 100;
-    //   var levelResult = document.createElement('p');
-    //   levelResult.innerText = 'Nivel ' + level + ': ' + levelScore.correct + '/' + levelScore.total + ' (' + levelPercentage.toFixed(2) + '%)';
-    //   questionContainer.appendChild(levelResult);
+    for (var level in levelScores) {
+        var levelScore = levelScores[level];
+        var levelPercentage = (levelScore.correct / levelScore.total) * 100;
+        var levelResult = document.createElement('p');
+        levelResult.innerText = 'Nivel ' + level + ': ' + levelScore.correct + '/' + levelScore.total + ' (' + levelPercentage.toFixed(2) + '%)';
+        questionContainer.appendChild(levelResult);
   
-    //   if (levelPercentage >= 90 && levelScore.correct === levelScore.total) {
-    //     passedLevels.push(level); // Agregar el nivel aprobado a la lista
-    //   }
-    // }
+        if (levelPercentage >= 90 && levelScore.correct === levelScore.total) {
+            passedLevels.push(level); // Agregar el nivel aprobado a la lista
+        }
+    }
   
-    // var finalLevel = passedLevels.length > 0 ? Math.max(...passedLevels) : 0; // Obtener el nivel más alto aprobado, o 0 si no se aprobó ningún nivel
+    var finalLevel = passedLevels.length > 0 ? Math.max(...passedLevels) : 0; // Obtener el nivel más alto aprobado, o 0 si no se aprobó ningún nivel
   
     // código para mostrar el nivel de Inglés de acuerdo a los resultados
-    // var levelElement = document.createElement('h2');
-    // levelElement.innerText = 'Nivel de inglés: ' + finalLevel;
-    // questionContainer.appendChild(levelElement);
+    var levelElement = document.createElement('h2');
+    levelElement.innerText = 'Nivel de inglés: ' + finalLevel;
+    questionContainer.appendChild(levelElement);
   
     var homeButton = document.createElement('button');
     homeButton.innerText = 'Ir a la página de inicio';
