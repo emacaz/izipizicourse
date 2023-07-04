@@ -95,8 +95,8 @@ var questions = [
         level: 'A1',
         question: '¿Cuál de las siguientes opciones muestra correctamente la forma presente del verbo "to go" en segunda persona del singular (you)?',
         answers: [
-            { text: 'Go', correct: false },
-            { text: 'Goes', correct: true },
+            { text: 'Go', correct: true },
+            { text: 'Goes', correct: false },
             { text: 'Gone', correct: false }
         ]
     },
@@ -916,7 +916,7 @@ var questions = [
 var userAnswers = [];
 var startTestButton = document.getElementById('start-test-btn');
 var timerElement = document.getElementById('timer');
-var timeLeft = 5 * 60; // 20 minutos en segundos
+var timeLeft = 1 * 60; // 20 minutos en segundos
 var timerId;
 
 startTestButton.addEventListener('click', function(e) {
@@ -1053,13 +1053,31 @@ function showResult() {
         var levelResult = document.createElement('p');
         levelResult.innerText = 'Nivel ' + level + ': ' + levelScore.correct + '/' + levelScore.total + ' (' + levelPercentage.toFixed(2) + '%)';
         questionContainer.appendChild(levelResult);
-  
-        if (levelPercentage >= 90 && levelScore.correct === levelScore.total) {
+
+        if (levelPercentage >= 90) {
             passedLevels.push(level); // Agregar el nivel aprobado a la lista
         }
     }
   
     var finalLevel = passedLevels.length > 0 ? Math.max(...passedLevels) : 0; // Obtener el nivel más alto aprobado, o 0 si no se aprobó ningún nivel
+
+    // Verificar si se aprobaron los niveles anteriores
+    var isLevelProgressionValid = true;
+    var levels = Object.keys(resultsByLevel).sort();
+    var currentIndex = levels.indexOf(finalLevel);
+    for (var i = 0; i < currentIndex; i++) {
+        var level = levels[i];
+        if (levelScores[level] === undefined || levelScores[level].correct / levelScores[level].total < 0.9) {
+            isLevelProgressionValid = false;
+            break;
+        }
+    }
+
+    if (!isLevelProgressionValid) {
+        var invalidLevelMessage = document.createElement('p');
+        invalidLevelMessage.innerText = '¡Has aprobado el nivel ' + finalLevel + ' pero no has aprobado los niveles anteriores! Puede indicar que hubo trampa o suerte.';
+        questionContainer.appendChild(invalidLevelMessage);
+    }
   
     // código para mostrar el nivel de Inglés de acuerdo a los resultados
     var levelElement = document.createElement('h2');
