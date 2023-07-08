@@ -985,7 +985,7 @@ var questions = [
 var userAnswers = [];
 var startTestButton = document.getElementById('start-test-btn');
 var timerElement = document.getElementById('timer');
-var timeLeft = .1 * 60; // 20 minutos en segundos
+var timeLeft = 20 * 60; // 20 minutos en segundos
 var timerId;
 
 startTestButton.addEventListener('click', function(e) {
