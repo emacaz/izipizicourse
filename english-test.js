@@ -913,10 +913,79 @@ var questions = [
     },
 ];
 
+// Var questions for testing
+// var questions = [
+//     // Nivel A1
+//     {
+//         level: 'A1',
+//         question: '¿Cuál de las siguientes frases es un saludo adecuado en inglés?',
+//         answers: [
+//             { text: 'Goodbye', correct: false },
+//             { text: 'How are you?', correct: true },
+//             { text: 'What is your name?', correct: false }
+//         ]
+//     },
+
+//     // NIVEL 2
+//     {
+//         level: 'A2',
+//         question: '¿Cuál es la conjugación correcta del verbo "to eat" en pasado simple?',
+//         answers: [
+//             { text: 'Eat', correct: false },
+//             { text: 'Ate', correct: true },
+//             { text: 'Eaten', correct: false }
+//         ]
+//     },
+
+//     // Level B1
+//     {
+//         level: 'B1',
+//         question: 'What is the correct expression for giving information on the phone?',
+//         answers: [
+//             { text: 'Can I help you?', correct: false },
+//             { text: 'May I provide you with the information?', correct: true },
+//             { text: 'How are you?', correct: false }
+//         ]
+//     },
+
+//     // LEVEL B2
+//     {
+//         level: 'B2',
+//         question: 'What is the focus of formal presentations?',
+//         answers: [
+//             { text: 'Persuasion', correct: true },
+//             { text: 'Vocabulary', correct: false },
+//             { text: 'Pronunciation', correct: false }
+//         ]
+//     },
+
+//     // LEVEL C1
+//     {
+//         level: 'C1',
+//         question: 'What is the purpose of preparation for C1 level certification exams?',
+//         answers: [
+//             { text: 'Basic vocabulary review', correct: false },
+//             { text: 'Casual conversation practice', correct: false },
+//             { text: 'Familiarization with exam format and requirements', correct: true }
+//         ]
+//     },
+
+//     // LEVEL C2
+//     {
+//         level: 'C2',
+//         question: 'What is the focus of masterful presentations and lectures?',
+//         answers: [
+//             { text: 'Vocabulary expansion', correct: false },
+//             { text: 'Perfecting pronunciation', correct: false },
+//             { text: 'Capturing and maintaining the audience\'s attention', correct: true }
+//         ]
+//     },
+// ];
+
 var userAnswers = [];
 var startTestButton = document.getElementById('start-test-btn');
 var timerElement = document.getElementById('timer');
-var timeLeft = 20 * 60; // 20 minutos en segundos
+var timeLeft = .1 * 60; // 20 minutos en segundos
 var timerId;
 
 startTestButton.addEventListener('click', function(e) {
@@ -943,19 +1012,71 @@ var score = 0;
 
 var questionContainer = document.getElementById('question-container');
 
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+}
+
+// Crear nuevos arrays por niveles
+var questionsByLevel = {};
+questions.forEach(function(question) {
+    var level = question.level;
+    if (!questionsByLevel[level]) {
+        questionsByLevel[level] = [];
+    }
+    questionsByLevel[level].push(question);
+});
+
+// Mostrar las preguntas por nivel empezando por el A1
+var levels = Object.keys(questionsByLevel).sort();
+var currentLevelIndex = 0;
+
 // Función para cargar la pregunta actual
 function loadQuestion() {
-    var currentQuestion = questions[currentQuestionIndex];
+    
+    var currentLevel = levels[currentLevelIndex];
+    var currentQuestions = questionsByLevel[currentLevel];
 
+    // Verificar si se han mostrado todas las preguntas del nivel actual
+    if (currentQuestions.length === 0) {
+        // Pasar al siguiente nivel
+        currentLevelIndex++;
+
+        // Verificar si se han mostrado todas las preguntas de todos los niveles
+        if (currentLevelIndex === levels.length) {
+            // Se han mostrado todas las preguntas, finalizar el test
+            showResult();
+            return;
+        }
+
+        // Obtener las preguntas del siguiente nivel
+        currentLevel = levels[currentLevelIndex];
+        currentQuestions = questionsByLevel[currentLevel];
+    }
+
+    // Mostrar una pregunta aleatoria del nivel actual
+    var randomIndex = Math.floor(Math.random() * currentQuestions.length);
+    var currentQuestion = currentQuestions.splice(randomIndex, 1)[0];
+
+    // shuffleArray(questions); // Mezclar las preguntas de forma aleatoria
+  
+    // var currentQuestion = questions[currentQuestionIndex];
+  
     questionContainer.innerHTML = '';
     var levelElement = document.createElement('h1');
     levelElement.innerText = 'Nivel ' + currentQuestion.level;
     questionContainer.appendChild(levelElement);
-
+  
     var questionElement = document.createElement('h2');
     questionElement.innerText = currentQuestion.question;
     questionContainer.appendChild(questionElement);
-
+  
     for (var i = 0; i < currentQuestion.answers.length; i++) {
         var answer = currentQuestion.answers[i];
         var answerElement = document.createElement('button');
@@ -964,6 +1085,7 @@ function loadQuestion() {
         questionContainer.appendChild(answerElement);
     }
 }
+  
 
 // Función para manejar el clic en una respuesta
 function handleAnswerClick(event) {
@@ -1062,10 +1184,8 @@ function showResult() {
     // Verificar el nivel más alto alcanzado.
     var finalLevel = passedLevels.length > 0 ? passedLevels.reduce(function(a, b) {
         return a > b ? a : b;
-    }) : '';      
+    }) : '0';      
     
-    console.log(passedLevels);
-
     // Verificar si se aprobaron los niveles anteriores
     var isLevelProgressionValid = true;
     var levels = Object.keys(resultsByLevel).sort();
