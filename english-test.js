@@ -1,3 +1,4 @@
+
 // Preguntas y respuestas del test
 var questions = [
     // Nivel A1
@@ -109,15 +110,15 @@ var questions = [
             { text: 'at', correct: false }
         ]
     },
-    {
-        level: 'A1',
-        question: '¿Qué instrucción se da en el audio?',
-        answers: [
-            { text: 'Option 1', correct: false },
-            { text: 'Option 2', correct: false },
-            { text: 'Option 3', correct: true }
-        ]
-    },
+    // {
+    //     level: 'A1',
+    //     question: '¿Qué instrucción se da en el audio?',
+    //     answers: [
+    //         { text: 'Option 1', correct: false },
+    //         { text: 'Option 2', correct: false },
+    //         { text: 'Option 3', correct: true }
+    //     ]
+    // },
     {
         level: 'A1',
         question: '¿Cuál de las siguientes frases es una expresión de gratitud en inglés?',
@@ -160,7 +161,7 @@ var questions = [
         level: 'A2',
         question: 'Completa la oración: "She _______ to the beach every summer."',
         answers: [
-            { text: 'Goes', correct: false },
+            { text: 'Gone', correct: false },
             { text: 'Go', correct: false },
             { text: 'Goes', correct: true }
         ]
@@ -179,13 +180,13 @@ var questions = [
         question: 'Elige el pronombre posesivo correcto para completar la oración: "Is this book _______?"',
         answers: [
             { text: 'Mine', correct: true },
-            { text: 'Yours', correct: false },
-            { text: 'Ours', correct: false }
+            { text: 'Your', correct: false },
+            { text: 'of me', correct: false }
         ]
     },
     {
         level: 'A2',
-        question: '¿Cuál es la preposición correcta para completar la oración: "I\'m going ___________ a movie tonight."',
+        question: '¿Cuál es la preposición correcta para completar la oración: "I\'m going _______ a movie tonight."',
         answers: [
             { text: 'To', correct: true },
             { text: 'For', correct: false },
@@ -215,8 +216,8 @@ var questions = [
         question: '¿Cuál es el superlativo de "good"?',
         answers: [
             { text: 'Goodest', correct: false },
-            { text: 'Best', correct: true },
-            { text: 'The best', correct: false }
+            { text: 'The goodest', correct: false },
+            { text: 'The best', correct: true }
         ]
     },
     {
@@ -239,7 +240,7 @@ var questions = [
     },
     {
         level: 'A2',
-        question: 'Completa la oración: "He ___________ his homework yesterday."',
+        question: 'Completa la oración: "He ______ his homework yesterday."',
         answers: [
             { text: 'Do', correct: false },
             { text: 'Did', correct: true },
@@ -257,7 +258,7 @@ var questions = [
     },
     {
         level: 'A2',
-        question: 'Elige el adverbio correcto para completar la oración: "She speaks English ____________."',
+        question: 'Elige el adverbio correcto para completar la oración: "She speaks English ________."',
         answers: [
             { text: 'Good', correct: false },
             { text: 'Well', correct: true },
@@ -295,14 +296,14 @@ var questions = [
         level: 'A2',
         question: 'Elige el pronombre posesivo correcto para completar la oración: "Is this pen _______?"',
         answers: [
-            { text: 'Mine', correct: false },
-            { text: 'Yours', correct: false },
+            { text: 'My', correct: false },
+            { text: 'Your', correct: false },
             { text: 'His', correct: true }
         ]
     },
     {
         level: 'A2',
-        question: '¿Cuál es la preposición correcta para completar la oración: "They\'re going ___________ a concert tonight."',
+        question: '¿Cuál es la preposición correcta para completar la oración: "They\'re going ______ a concert tonight."',
         answers: [
             { text: 'To', correct: true },
             { text: 'By', correct: false },
@@ -338,7 +339,7 @@ var questions = [
     },
     {
         level: 'A2',
-        question: 'Elige el adverbio correcto para completar la oración: "He drives ____________."',
+        question: 'Elige el adverbio correcto para completar la oración: "He drives ________."',
         answers: [
             { text: 'Good', correct: false },
             { text: 'Well', correct: true },
@@ -350,7 +351,7 @@ var questions = [
         question: '¿Cuál es la traducción correcta de "casa" al inglés?',
         answers: [
             { text: 'House', correct: true },
-            { text: 'Home', correct: false },
+            { text: 'case', correct: false },
             { text: 'Room', correct: false }
         ]
     },
@@ -369,7 +370,7 @@ var questions = [
         level: 'B1',
         question: 'What is the correct expression for giving information on the phone?',
         answers: [
-            { text: 'Can I help you?', correct: false },
+            { text: 'Can I take your case?', correct: false },
             { text: 'May I provide you with the information?', correct: true },
             { text: 'How are you?', correct: false }
         ]
@@ -441,9 +442,9 @@ var questions = [
         level: 'B1',
         question: 'Which conditional is used for general truths?',
         answers: [
-            { text: 'Zero conditional', correct: false },
+            { text: 'Zero conditional', correct: true },
             { text: 'First conditional', correct: false },
-            { text: 'Second conditional', correct: true }
+            { text: 'Second conditional', correct: false }
         ]
     },
     {
@@ -913,9 +914,18 @@ var questions = [
     },
 ];
 
-// Var questions for testing
+// Preguntas de Testing
 // var questions = [
 //     // Nivel A1
+//     {
+//         level: 'A1',
+//         question: '¿Cuál de las siguientes opciones muestra correctamente la pronunciación de la letra "B"?',
+//         answers: [
+//             { text: '/be/', correct: false },
+//             { text: '/bi/', correct: true },
+//             { text: '/ba/', correct: false }
+//         ]
+//     },
 //     {
 //         level: 'A1',
 //         question: '¿Cuál de las siguientes frases es un saludo adecuado en inglés?',
@@ -923,6 +933,15 @@ var questions = [
 //             { text: 'Goodbye', correct: false },
 //             { text: 'How are you?', correct: true },
 //             { text: 'What is your name?', correct: false }
+//         ]
+//     },
+//     {
+//         level: 'A1',
+//         question: '¿Cuál de las siguientes palabras describe la apariencia física?',
+//         answers: [
+//             { text: 'Happy', correct: false },
+//             { text: 'Tall', correct: true },
+//             { text: 'Delicious', correct: false }
 //         ]
 //     },
 
@@ -936,15 +955,33 @@ var questions = [
 //             { text: 'Eaten', correct: false }
 //         ]
 //     },
+//     {
+//         level: 'A2',
+//         question: '¿Cuál es el antónimo de la palabra "big"?',
+//         answers: [
+//             { text: 'Small', correct: true },
+//             { text: 'Huge', correct: false },
+//             { text: 'Tiny', correct: false }
+//         ]
+//     },
 
 //     // Level B1
 //     {
 //         level: 'B1',
 //         question: 'What is the correct expression for giving information on the phone?',
 //         answers: [
-//             { text: 'Can I help you?', correct: false },
+//             { text: 'Can I take your case?', correct: false },
 //             { text: 'May I provide you with the information?', correct: true },
 //             { text: 'How are you?', correct: false }
+//         ]
+//     },
+//     {
+//         level: 'B1',
+//         question: 'What is the term for discussing online activities?',
+//         answers: [
+//             { text: 'Social media', correct: true },
+//             { text: 'Technology', correct: false },
+//             { text: 'Communication', correct: false }
 //         ]
 //     },
 
@@ -958,15 +995,33 @@ var questions = [
 //             { text: 'Pronunciation', correct: false }
 //         ]
 //     },
+//     {
+//         level: 'B2',
+//         question: 'Which term refers to business and international trade vocabulary?',
+//         answers: [
+//             { text: 'Sustainability', correct: false },
+//             { text: 'Environment', correct: false },
+//             { text: 'Business jargon', correct: true }
+//         ]
+//     },
 
 //     // LEVEL C1
 //     {
 //         level: 'C1',
-//         question: 'What is the purpose of preparation for C1 level certification exams?',
+//         question: 'What is the focus of academic presentations and debates?',
 //         answers: [
-//             { text: 'Basic vocabulary review', correct: false },
-//             { text: 'Casual conversation practice', correct: false },
-//             { text: 'Familiarization with exam format and requirements', correct: true }
+//             { text: 'Vocabulary expansion', correct: false },
+//             { text: 'Perfecting pronunciation', correct: false },
+//             { text: 'Effective delivery and participation', correct: true }
+//         ]
+//     },
+//     {
+//         level: 'C1',
+//         question: 'Which term refers to specialized vocabulary in professional fields?',
+//         answers: [
+//             { text: 'Jargon', correct: true },
+//             { text: 'Common phrases', correct: false },
+//             { text: 'Terms specific to the field', correct: false }
 //         ]
 //     },
 
@@ -980,7 +1035,17 @@ var questions = [
 //             { text: 'Capturing and maintaining the audience\'s attention', correct: true }
 //         ]
 //     },
+//     {
+//         level: 'C2',
+//         question: 'Which term refers to specialized vocabulary in advanced professional fields?',
+//         answers: [
+//             { text: 'Jargon', correct: false },
+//             { text: 'Common phrases', correct: false },
+//             { text: 'Technical terms specific to the field', correct: true }
+//         ]
+//     },
 // ];
+
 
 var userAnswers = [];
 var startTestButton = document.getElementById('start-test-btn');
@@ -1006,68 +1071,15 @@ var resultsByLevel = {
     'C2': { correct: 0, total: 0 }
 };  
   
-  
 var currentQuestionIndex = 0;
 var score = 0;
 
 var questionContainer = document.getElementById('question-container');
 
-
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-    return array;
-}
-
-// Crear nuevos arrays por niveles
-var questionsByLevel = {};
-questions.forEach(function(question) {
-    var level = question.level;
-    if (!questionsByLevel[level]) {
-        questionsByLevel[level] = [];
-    }
-    questionsByLevel[level].push(question);
-});
-
-// Mostrar las preguntas por nivel empezando por el A1
-var levels = Object.keys(questionsByLevel).sort();
-var currentLevelIndex = 0;
-
 // Función para cargar la pregunta actual
 function loadQuestion() {
-    
-    var currentLevel = levels[currentLevelIndex];
-    var currentQuestions = questionsByLevel[currentLevel];
+    var currentQuestion = questions[currentQuestionIndex];
 
-    // Verificar si se han mostrado todas las preguntas del nivel actual
-    if (currentQuestions.length === 0) {
-        // Pasar al siguiente nivel
-        currentLevelIndex++;
-
-        // Verificar si se han mostrado todas las preguntas de todos los niveles
-        if (currentLevelIndex === levels.length) {
-            // Se han mostrado todas las preguntas, finalizar el test
-            showResult();
-            return;
-        }
-
-        // Obtener las preguntas del siguiente nivel
-        currentLevel = levels[currentLevelIndex];
-        currentQuestions = questionsByLevel[currentLevel];
-    }
-
-    // Mostrar una pregunta aleatoria del nivel actual
-    var randomIndex = Math.floor(Math.random() * currentQuestions.length);
-    var currentQuestion = currentQuestions.splice(randomIndex, 1)[0];
-
-    // shuffleArray(questions); // Mezclar las preguntas de forma aleatoria
-  
-    // var currentQuestion = questions[currentQuestionIndex];
-  
     questionContainer.innerHTML = '';
     var levelElement = document.createElement('h1');
     levelElement.innerText = 'Nivel ' + currentQuestion.level;
@@ -1086,7 +1098,6 @@ function loadQuestion() {
     }
 }
   
-
 // Función para manejar el clic en una respuesta
 function handleAnswerClick(event) {
     var selectedAnswer = event.target;
@@ -1095,7 +1106,7 @@ function handleAnswerClick(event) {
     var userAnswer = {
         question: currentQuestion.question,
         answer: selectedAnswer.textContent,
-        correct: selectedAnswer.textContent === currentQuestion.answers.find(a => a.correct).text
+        correct: currentQuestion.answers.find(a => a.text === selectedAnswer.textContent).correct
     };
     userAnswers.push(userAnswer);
 
@@ -1111,7 +1122,6 @@ function handleAnswerClick(event) {
         showResult();
     }
 }
-
 
 // Restablecer el temporizador
 function resetTimer() {
@@ -1230,7 +1240,6 @@ function showResult() {
   
     resetTimer(); // Reiniciar el temporizador al finalizar el test
 }
-  
 
 function updateTimer() {
     var minutes = Math.floor(timeLeft / 60);
