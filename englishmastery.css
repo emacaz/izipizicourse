@@ -1,0 +1,59 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('images/english-mastery-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.3; /* Valor para cambiar la transparencia */
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.logo-container-div {
+
+}
+
+#gear_icon_id {
+
+}
+
+#english_mastery_logo_id {
+
+}
+
+.logo-container-div p {
+
+}
+
+.slogan-container-div {
+    padding-top: 20px;
+}
+
+.slogan-container-div p {
+    
+}
+
+@media (max-width: 450px) {
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('images/english-mastery-background-mobile.jpg');
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.3; /* Valor para cambiar la transparencia */
+    }
+}
