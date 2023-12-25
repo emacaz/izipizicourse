@@ -48,16 +48,8 @@ section {
     padding: 4rem 0;
 }
 
-#gear_icon_id {
-
-}
-
 #english_mastery_logo_id {
     max-width: 300px;
-}
-
-.logo-container-div p {
-
 }
 
 .slogan-container-div {
@@ -70,9 +62,22 @@ section {
     
 }
 
+/* CSS FOR CHANGING PHRASE */
 .slogan-container-div p {
-    
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
 }
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(100%); /* Empieza fuera del contenedor a la derecha */
+    }
+    to {
+        transform: translateX(0); /* Se desliza hacia la izquierda para aparecer */
+    }
+}
+
+/* CSS FOR CHANGING PHRASE END */
 
 .slogan-container-div p a {
     text-decoration: underline;
@@ -127,12 +132,14 @@ section {
         width: 100%;
     }
 
-    #gear_icon_id {
-        
-    }
-
     .slogan-container-div {
         padding: 1rem;
         text-align: center;
+    }
+
+    .slogan-container-div p {
+        white-space: unset;
+        overflow: hidden; /* Oculta el texto que se desborda */
+        word-wrap: break-word;
     }
 }
